@@ -190,8 +190,11 @@ button:hover {
         transform: translateY(5px);
     }
 }
-.btn__reset:hover{
-	background-color: #c9c3bd;
+.btn__reset{
+	background-color: #ffffff;
+   width: 90px;
+   height: 50px;
+   border-radius: 10%;
 }
 
 .container 
