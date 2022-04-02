@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -13,60 +13,107 @@
 
 </header>
 <body>
-    <div class="slider-wrap">
-        <div id="card-slider" class="slider">
-          <div class="slider-item">
-            <div class="animation-card_image">
-              <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" alt="">
-            </div>
-            <div class="animation-card_content">
-              <h4 class="animation-card_content_title title-2">Charlize Theron 1</h4>
-              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-              <p class="animation-card_content_city">New York, NY</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="animation-card_image">
-              <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" alt="">
-            </div>
-            <div class="animation-card_content">
-              <h4 class="animation-card_content_title title-2">Charlize Theron 2</h4>
-              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-              <p class="animation-card_content_city">New York, NY</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="animation-card_image">
-              <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" alt="">
-            </div>
-            <div class="animation-card_content">
-              <h4 class="animation-card_content_title title-2">Charlize Theron 3</h4>
-              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-              <p class="animation-card_content_city">New York, NY</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="animation-card_image">
-              <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" alt="">
-            </div>
-            <div class="animation-card_content">
-              <h4 class="animation-card_content_title title-2">Charlize Theron 4</h4>
-              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-              <p class="animation-card_content_city">New York, NY</p>
-            </div>
-          </div>
-          <div class="slider-item">
-            <div class="animation-card_image">
-              <img src="https://uznayvse.ru/images/stories2016/uzn_1460039478.jpg" alt="">
-            </div>
-            <div class="animation-card_content">
-              <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
-              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
-              <p class="animation-card_content_city">New York, NY</p>
-            </div>
-          </div>
+   <div class="container">
+
+  <div class="row">
+    <div class="col">
+      <div class="carousel-item">
+        <img src="..." alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>...</h5>
+          <p>...</p>
         </div>
       </div>
+    </div>
+  </div>
+   </div>
 
     </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Flexbox Testimonials</title>
+  <link rel="stylesheet" href="/src/public/css/home.css">
+  <link rel="stylesheet" href="/src/public/js/carrousel.js">
+</head>
+<body>
+  <div>
+    <%- include('template/menu'); %>
+  </div>
+  <br>
+ 
+  <div class="col-sm-7 mx-auto">
+    <header class="section-header text-center">
+      <span class="h1 d-block">
+        <span></span>
+      </span>
+      <h2>Happy Customers</h2>
+    </header>
+  </div>
+  
+  <div id="flex-container" class="testimonials">
+    <div id="left-zone">
+      <ul class="list">
+        <li class="item">
+          <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+          <label class="label_testimonial-1" for="radio_testimonial-1">Diamond Pest Elimination</label>
+          <div class="content-test content_testimonial-1">
+            <span class="picto"></span>
+            <h1>Diamond Pest Elimination</h1>
+            <p>“The team really takes pride in their work. If I didn’t know any better I would think they actually worked for my company.”</p>
+            <p class="testimonialFrom">Bill, Owner</p>
+            <p class="testimonialState">Rochester, NY</p>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+          <label class="label_testimonial-2" for="radio_testimonial-2">A+ Handyman Service</label>
+          <div class="content-test content_testimonial-2">
+            <span class="picto"></span>
+            <h1>A+ Handyman Service</h1>
+            <p>“Quite simply… the service offers prompt response time to my visitors and helps me to better know what type of project a potential customer wants.”</p>
+            <p class="testimonialFrom">Bill, Owner</p>
+            <p class="testimonialState">Tucson, AZ</p>
+            <br>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+          <label class="label_testimonial-3" for="radio_testimonial-3">Mod Movers</label>
+          <div class="content-test content_testimonial-3">
+            <span class="picto"></span>
+            <h1>Mod Movers</h1>
+            <p>“I couldn’t believe it. I actually had to hire someone to help me keep up with the new business. I had no idea my website had so much value.”</p>
+            <p class="testimonialFrom">Marlene, Owner</p>
+            <p class="testimonialState">Monterey, CA</p>
+          </div>
+        </li>
+        <li class="item">
+          <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+          <label class="label_testimonial-4" for="radio_testimonial-4">AK Pest Control</label>
+          <div class="content-test content_testimonial-4">
+            <span class="picto"></span>
+            <h1>AK Pest Control</h1>
+            <p>Great company to send leads. Very efficient and pleased with the services. We get lots of leads and that whats important. Support is also great from the managers/support. Thanks YPC Chat</p>
+            <p class="testimonialFrom">Mark, Owner</p>
+            <p class="testimonialState">Somerset, VA</p>
+            <br>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="right-zone"></div>
+  </div>
+  <br>
+  <div class="col-lg">
+    <%- include('template/footer'); %>
+  </div>
+ 
+
+</body>
+
+
 </html>
