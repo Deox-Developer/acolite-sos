@@ -11,8 +11,8 @@
 
 /* Start body rules */
 body {
-    background-image: linear-gradient(-225deg, #a1f7dd 0%, #e1b8d919 100%);
-background-image: linear-gradient(to top, #a8ede96f 0%rgba(218, 183, 194, 0.276)e3 100%);
+    background-image: linear-gradient(-225deg, #a1f7dd72 0%, #e1b8d919 100%);
+background-image: linear-gradient(to top, #a8ede927 0%rgba(218, 183, 194, 0.276)e3 100%);
 background-attachment: fixed;
   background-repeat: no-repeat;
 
@@ -40,9 +40,9 @@ form {
     height: auto;
     border-radius: 5px;
     margin: 2% auto;
-    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    box-shadow: 0 9px 50px hsla(24, 2%, 57%, 0.31);
     padding: 2%;
-    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    background-image: linear-gradient(-225deg, #cbfced3a 50%, #d6fedd 50%);
 }
 /* form Container */
 form .con {
@@ -189,4 +189,22 @@ button:hover {
     100% {
         transform: translateY(5px);
     }
+}
+.btn__reset:hover{
+	background-color: #c9c3bd;
+}
+
+.container 
+{
+    width: 100%;
+    height: 100%;
+    column-span:all;
+
+
+}
+.imagen{
+
+
+width: 80px;
+height: 80px;
 }

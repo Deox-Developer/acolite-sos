@@ -1,24 +1,24 @@
-// const express = require('express')
-// const {vistaPrincipal, vistaTables, vistaNotifications}= require('../controllers/dashboard/PageControllers')
-// const router = express.Router()
+const express = require('express')
+const {vistaPrincipal, vistaTables, vistaNotifications}= require('../controllers/dashboard/PageControllers')
+const router = express.Router()
 
-// //const conexion = require ('../database/db')
-
-
-// router.get('/home',vistaPrincipal)
-// router.get('/tables',vistaTables)
-// // router.get('/tables',(req , res)=>{
-
-// //     conexion.query('SELECT *FROM usuarios', (error, results)=>{
-// //         if (error) {
-// //             throw error
-// //         } else{
-// //             res.render('tables',{results:results})
-// //         }
-// //     })
-// // })
-// router.get('/notifications',vistaNotifications)
+//const conexion = require ('../database/db')
 
 
+router.get('/homedashboard',vistaPrincipal)
+router.get('/tables',vistaTables)
+// router.get('/tables',(req , res)=>{
 
-// module.exports=router;
+//     conexion.query('SELECT *FROM usuarios', (error, results)=>{
+//         if (error) {
+//             throw error
+//         } else{
+//             res.render('tables',{results:results})
+//         }
+//     })
+// })
+router.get('/notifications',vistaNotifications)
+
+
+
+module.exports=router;
