@@ -4,7 +4,7 @@ const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const path = require('path')
-
+const expressLayouts = require('express-ejs-layouts')
 
 
 
@@ -12,6 +12,8 @@ const path = require('path')
 //Inicialización de express
 const app = express();
 
+// app.set('view engine', 'ejs')
+// app.use(expressLayouts)
 //Archivos estaticos
 app.use(express.static(__dirname, + '/public'));
 
@@ -43,7 +45,7 @@ app.use(passport.session());
 app.use(require('./src/routes/home-router'));
 app.use(require('./src/routes/auth-router'))
 app.use(require('./src/routes/usuario.router'));
-
+// app.use(require('./src/routes/dashboard'));
 
 
 //Iniciar Server

@@ -1,13 +1,25 @@
-<link rel="stylesheet" href="/src/public/css/menu.css">
+<link rel="stylesheet" href="/src/public/css/menu.css" />
+<link rel="stylesheet" href="/src/public/js/menu.js" />
 
-<nav class="menu">
-    <section class="menu__container">
-        <h1>Acolite <spam>S.O.S</spams></h1>
-    </section>
-    <ul>
-        <li>Inicio</li>
-        <li>Nosotros</li>
-        <li>Contáctanos</li>
-        <li><a href="/login">Iniciar Sesión</a></li>
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="logo nav-link">ACOLITE S.O.S</a>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="/nosotros" class="nav-menu-link nav-link">Nosotros</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">Contáctanos</a>
+      </li>
+
+      <li class="nav-menu-item">
+        <a href="/login" class="nav-menu-link nav-link nav-menu-link_active"
+          >Iniciar Sesión</a
+        >
+      </li>
     </ul>
-</nav>
+  </nav>
+</header>
