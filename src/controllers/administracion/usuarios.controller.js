@@ -18,6 +18,7 @@ const registroUsuario = async (req, res) => {
 
 const getUsuarios = async (req, res) => {
     try {
+        
         const response = await pool.query(
             'SELECT * FROM administracion.usuarios WHERE estado_cuenta = true');
         res.status(200).json(response.rows);
@@ -44,10 +45,9 @@ const getUsuarioById = async (req, res) => {
 const crearUsuario = async (req, res) => {
     try {
         const { usuario_nombre, usuario_email, password, estado_cuenta } = req.body;
-        const hashpassword = await bcrypt.hash(password, 10);
         const nuevoUsuario = await pool.query(
             'INSERT INTO administracion.usuarios (usuario_nombre, usuario_email, password, estado_cuenta) VALUES ($1,$2,$3,$4) RETURNING *'
-            , [usuario_nombre, usuario_email, hashpassword, estado_cuenta]);
+            , [usuario_nombre, usuario_email, password, estado_cuenta]);
         res.json({
             message: "Usuario creado con éxito", body: { usuario: { usuario_nombre, usuario_email, password, estado_cuenta } }
         });
