@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
 /* End Fonts */
 /* Start Global rules */
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 /* End Global rules */
 
-/* Start body rules */
+Start body rules
 body {
     background-image: linear-gradient(-225deg, #a1f7dd72 0%, #e1b8d919 100%);
 background-image: linear-gradient(to top, #a8ede927 0%rgba(218, 183, 194, 0.276)e3 100%);
@@ -20,7 +20,7 @@ background-attachment: fixed;
 /*   the main font */
     font-family: 'Abel', sans-serif;
 opacity: .95;
-/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); 
 }
 
 

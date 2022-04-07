@@ -14,6 +14,8 @@ section {
   font-weight: 700;
   text-decoration: underline;
   position: fixed;
+  z-index:1;
+  display: flex;
 }
 
 .footer-distributed {

@@ -6,23 +6,24 @@
   body {
     font-family: sans-serif;
  position: static;
+ 
+ 
   }
   
-  .header {
-    background-color: #5092e853;
+
+  
+  .nav {
+    z-index:1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4e8fe4c6;
+    max-width: 1550px;
+    margin: 0 auto;
     height: 75px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-  
-    max-width: 1400px;
-    margin: 0 auto;
   }
   
   .nav-link {

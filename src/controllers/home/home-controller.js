@@ -9,6 +9,24 @@ const home = async (req, res) => {
     }
 }
 
+
+
+
+
+/// nosotros
+
+const nosotros = async (req, res) => {
+    try {
+        res.render('nosotros');
+    } catch (error) {
+        
+        res.status(500).json({ error: error.message });
+    }
+}
+
+
+
 module.exports =  {
-    home
+    home,
+    nosotros
 }
