@@ -1,5 +1,5 @@
 const pool = require('../../config/db-config');
-const bcrypt = require('bcrypt');
+
 
 
 
@@ -76,11 +76,10 @@ const updateUsuario = async (req, res) => {
     try {
         const usuario_id = req.params.usuario_id;
         const { usuario_nombre, usuario_email, password } = req.body;
-        const hashpassword = await bcrypt.hash(password, 10);
         const fecha_modificacion = new Date();
         const actualizacion_usuario = await pool.query(
             'UPDATE administracion.usuarios SET usuario_nombre = $1, usuario_email = $2, password = $3, fecha_modificacion = $4 WHERE usuario_id = $5',
-            [usuario_nombre, usuario_email, hashpassword, fecha_modificacion.toDateString(), usuario_id]);
+            [usuario_nombre, usuario_email, password, fecha_modificacion.toDateString(), usuario_id]);
         console.log(actualizacion_usuario);
         res.json('Usuario modificado con éxito.');
 

@@ -1,7 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const passport = require('passport');
-
+const hbs = require('hbs')
 
 
 
@@ -9,31 +8,33 @@ const passport = require('passport');
 //Inicialización de express
 const app = express();
 
-//Archivos estaticos
-app.use(express.static(__dirname, + '/public'));
-
-
 //Configuraciones
 app.set('port', process.env.PORT || 8080);
-app.set('view engine', 'ejs');
-app.set('views',__dirname + '/src/views');
+hbs.registerPartials(__dirname + '/src/views/partials', function (err) { });
+app.set('view engine', 'hbs');
+app.set("views", __dirname + "/src/views");
 
+app.use(express.static(__dirname + "/src/public"));
 
 //Middlewares
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extends: true }));
-app.use(passport.initialize());
+
 
 //Routes 
-app.use(require('./src/routes/home-router'));
-app.use(require('./src/routes/auth-router'))
 app.use(require('./src/routes/usuario.router'));
+
+
+// Index
+app.get('/',(req, res)=>{
+    res.render('index',{ titulo: 'inicio' })
+})
 
 
 //Iniciar Server
 app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
+    console.log('Server on port', `http://localhost:${app.get("port")}`);
 });
 
 
