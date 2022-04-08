@@ -27,14 +27,12 @@ app.use(require('./src/routes/usuario.router'));
 
 
 // Index
-app.get('/',(req, res)=>{
-    res.render('index',{ titulo: 'inicio' })
-})
+app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
 
 
 //Iniciar Server
 app.listen(app.get('port'), () => {
-    console.log('Server on port', `http://localhost:${app.get("port")}`);
+    console.log(`Bienvenido a la consola http://localhost:${app.get("port")}`);
 });
 
 
