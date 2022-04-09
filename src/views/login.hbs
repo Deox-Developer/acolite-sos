@@ -1,0 +1,12 @@
+{{>header titulo = 'Acolite - Login'}}
+
+<body>
+  <form action="/login" method="post">
+    <input type="email" name="email" placeholder="ingresa email">
+    <input type="password" name="password" placeholder="ingresa tu clave">
+    <input type="submit" value="Iniciar Sesión">
+  </form>
+
+  <a href="/registrar-usuario">Regístrate</a>
+</body>
+{{>footer}}
