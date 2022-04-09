@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extends: true }));
 
 //Routes 
 app.use(require('./src/routes/usuario.router'));
+app.use(require('./src/routes/auth.router'));
 
 
 // Index

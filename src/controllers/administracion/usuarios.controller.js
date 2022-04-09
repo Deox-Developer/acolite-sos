@@ -1,13 +1,10 @@
 const pool = require('../../config/db-config');
 
-
-
-
 //Register
 
 const registroUsuario = async (req, res) => {
     try {
-        res.render('Registro');
+        res.render('registrar-usuario');
     } catch (error) {
         
         res.status(500).json({ error: error.message });
@@ -31,9 +28,9 @@ const getUsuarios = async (req, res) => {
 
 const getUsuarioById = async (req, res) => {
     try {
-        const usuarioId = req.params.usuarioId;
+        const idUsuario = req.params.idUsuario;
         const response = await pool.query(
-            'SELECT * FROM administracion.usuarios WHERE usuario_id = $1 AND estado_cuenta = $2', [usuarioId]);
+            'SELECT * FROM administracion.usuarios WHERE id_usuario = $1 AND estado_cuenta = true', [idUsuario]);
         res.json(response.rows);
     } catch (error) {
         res.status(500).json({ error: error.message });
