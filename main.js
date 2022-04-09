@@ -30,6 +30,9 @@ app.use(require('./src/routes/auth.router'));
 // Index
 app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
 
+// Index
+app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
+
 
 //Iniciar Server
 app.listen(app.get('port'), () => {
