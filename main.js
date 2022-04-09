@@ -24,7 +24,11 @@ app.use(express.urlencoded({ extends: true }));
 
 //Routes 
 app.use(require('./src/routes/usuario.router'));
+app.use(require('./src/routes/auth.router'));
 
+
+// Index
+app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
 
 // Index
 app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
