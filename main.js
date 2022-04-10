@@ -19,15 +19,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extends: true }));
 
 
+// Index
+app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
+
+
 //Routes 
 app.use(require('./src/routes/usuario.router'));
 app.use(require('./src/routes/auth.router'));
 app.use(require('./src/routes/dashboard.router'))
-
-
-// Index
-app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
-
+app.use((req, res, next) => {
+    res.status(404).render("404", {
+        titulo: "404",
+        descripcion: "Página no encontrada"
+    })
+})
 
 //Iniciar Server
 app.listen(app.get('port'), () => {
