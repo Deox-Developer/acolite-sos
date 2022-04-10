@@ -1,9 +1,9 @@
 const {Router} =require('express');
 const router = Router();
 
-const {dashboard} = require('../controllers/dashboard/dashboard.controller');
+const {getUsuarioById} = require('../controllers/dashboard/dashboard.controller');
 
-router.get('/dashboard',dashboard);
 
+router.get('/dashboard/:idUsuario', getUsuarioById);
 
 module.exports = router;

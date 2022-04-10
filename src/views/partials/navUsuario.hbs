@@ -8,9 +8,9 @@
 </head>
 
 <header>
-    <nav class="nav__bar">
-        <ul>
-            <li><a href="/">Cerrar Sessión</a></li>
-        </ul>
-    </nav>
+   <form action="/logOut" method="post">
+        <input name="salir" type="hidden" value="true">
+        <input name="contenido" type="hidden" value="{{body.id_usuario}}">
+        <input type="submit" value="Cerrar Sesión">
+    </form>
 </header>

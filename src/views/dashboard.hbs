@@ -1,28 +1,12 @@
-{{#if estado_cuenta}}
-
+{{#if session.estado_conexion}}
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
 
 <body>
     <h6>Pagína de dashboard</h6>
-    <h4>Bienvenido {{nombre1}} {{apellido1}} </h4>
+    <h4>Bienvenido {{body.nombre1}} {{body.apellido1}} </h4>
 </body>
 
 {{>footer}}
 {{else}}
-{{>header titulo = 'Acolite - Login'}}
-
-<body>
-    <h1>Ups! para ver este sitio necesitas estar logeado</h1>
-    <form action="/login" method="post">
-        <input type="email" name="email" placeholder="ingresa email">
-        <input type="password" name="password" placeholder="ingresa tu clave">
-        <input type="submit" value="Iniciar Sesión">
-    </form>
-
-    {{#if alert}}
-    <h3>{{mensaje}}</h3>
-    {{/if}}
-    <a href="/registrar-usuario">Regístrate</a>
-</body>
-{{>footer}}
+<h2>error</h2>
 {{/if}}

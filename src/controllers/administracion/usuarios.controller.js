@@ -32,7 +32,6 @@ const getUsuarioById = async (req, res) => {
         const response = await pool.query(
             'SELECT * FROM administracion.usuarios WHERE id_usuario = $1 AND estado_cuenta = true',
             [idUsuario]);
-        console.log(response.rows[0]);
         res.render('dashboard', response.rows[0])
     } catch (error) {
         res.status(500).json({ error: error.message });
