@@ -20,19 +20,18 @@ app.use(express.urlencoded({ extends: true }));
 
 
 // Index
-app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})})
-
+app.get('/',(req, res)=>{res.render('index',{titulo: 'Home'})});
+app.use(require('./src/routes/nosotros.routers'));
+app.use(require('./src/routes/contacto.routers'));
 
 //Routes 
+
 app.use(require('./src/routes/usuario.router'));
 app.use(require('./src/routes/auth.router'));
-app.use(require('./src/routes/dashboard.router'))
-app.use((req, res, next) => {
-    res.status(404).render("404", {
-        titulo: "404",
-        descripcion: "Página no encontrada"
-    })
-})
+app.use(require('./src/routes/dashboard.router'));
+
+
+app.use((req, res, next) => {res.status(404).render("404", {titulo: "404", descripcion: "Página no encontrada"})});
 
 //Iniciar Server
 app.listen(app.get('port'), () => {

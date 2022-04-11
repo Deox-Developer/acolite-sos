@@ -46,12 +46,16 @@ const crearUsuario = async (req, res) => {
         const nuevoUsuario = await pool.query(
             'INSERT INTO administracion.usuarios (usuario_nombre, usuario_email, password, estado_cuenta) VALUES ($1,$2,$3,$4) RETURNING *'
             , [usuario_nombre, usuario_email, password, estado_cuenta]);
-        res.json({
-            message: "Usuario creado con éxito", body: { usuario: { usuario_nombre, usuario_email, password, estado_cuenta } }
-        });
-        console.log(nuevoUsuario.rows[0]);
+        const datosUsuario = nuevoUsuario.rows[0];
+        await pool.query(
+            'INSERT INTO administracion.session(id_usuario, estado_conexion) VALUES ($1, $2)',
+            [datosUsuario.id_usuario, true]
+        );
+        res.redirect('/dashboard/'+datosUsuario.id_usuario)
+
+
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).render('registrar-usuario', { error: error.message });
     }
 };
 
