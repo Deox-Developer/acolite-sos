@@ -1,11 +1,10 @@
 const {Router} =require('express');
 const router = Router();
 
+const{loginPage,datosIngreso,logOut}=require('../controllers/administracion/auth.controller');
 
-
-const {iniciarSession,validacionUsuario} = require('../lib/auth/auth-controller');
-
-router.get('/login',iniciarSession);
-router.post('/login',validacionUsuario);
+router.get('/login',loginPage);
+router.post('/login', datosIngreso);
+router.post('/logOut', logOut);
 
 module.exports = router;

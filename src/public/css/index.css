@@ -1,0 +1,22 @@
+.container__login{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    .input-separador{
+        padding: 10px;
+        margin: 10px;
+        display:flex;
+        text-align: center;
+    }
+    
+    .input-btn{
+        padding: 10px;
+        margin: 9px;
+        margin-left: 50px;
+        display:flex;
+        text-align: center;
+    }

@@ -1,0 +1,17 @@
+{{>header titulo = 'Acolite - Registrar Usuario'}}
+
+<body>
+    <h1>Registrar usuario</h1>
+    <hr>
+
+    <form action="/registrar-usuario" method="post">
+        <input type="text" name="usuario_nombre" placeholder="nombre de usuario">
+        <input type="email" name="usuario_email" placeholder="correo electrónico">
+        <input type="password" name="password" placeholder="contraseña">
+        <input type="checkbox" name="estado_cuenta">
+        <input type="submit" value="Registrar">
+    </form>
+
+    {{error}}
+</body>
+{{>footer}}

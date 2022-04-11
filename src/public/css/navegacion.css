@@ -1,0 +1,144 @@
+.container{
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header{
+  background: #1f1e1e;
+  color: #ffffff;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.nombre__sos{
+  font-size: 18px;
+  font-weight: bold;
+  color: #2de2fa;
+}
+.logo{
+  color: #ffffff;
+  text-decoration:none;
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.logo span{
+  font-weight: 300;
+}
+.site-nav{
+  top:100%;
+  right:0;
+  position: absolute;
+  background: #1f1e1e;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+  clip-path: circle(150% at top right);
+}
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li{
+  border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+  border-bottom: none;
+}
+.site-nav a{
+  color: #ffffff;
+  display: block;
+  padding: 2em 6em;
+  
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus{
+  background: #636363;
+  color: #2de2fa;
+}
+
+.site-nav--icon{
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.753);
+}
+
+.menu-toggle{
+ 
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  
+}
+.menu-open .hamburger{
+  transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+  opacity: 0;
+}
+.menu-open .hamburger::after{
+  transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+  transform: translateY(-6px);
+}
+.hamburger::after{
+  transform: translateY(3px);
+}
+
+@media (min-width:700px){
+.menu-toggle{
+    display: none;
+} 
+.site-nav{
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    margin-right: 10px;
+    clip-path: initial;
+} 
+.site-nav li{
+    display: inline-block;
+    border: none;
+}
+
+.site-nav a{
+    padding: 0;
+    margin-left: 3em;
+}
+.site-nav--icon{
+    display: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: transparent;
+}
+
+}
