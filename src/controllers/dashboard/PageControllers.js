@@ -1,15 +1,15 @@
-const vistaPrincipal = (req, res)=>{
-    res.render('homedashboard')
-}
-const vistaTables = (req, res)=>{
-    res.render('tables')
-}
-const vistaNotifications = (req, res)=>{
-    res.render('notifications')
-}
+// const vistaPrincipal = (req, res)=>{
+//     res.render('homedashboard')
+// }
+// const vistaTables = (req, res)=>{
+//     res.render('tables')
+// }
+// const vistaNotifications = (req, res)=>{
+//     res.render('notifications')
+// }
 
-module.exports = {
-    vistaPrincipal,
-    vistaTables,
-    vistaNotifications
-}
+// module.exports = {
+//     vistaPrincipal,
+//     vistaTables,
+//     vistaNotifications
+// }
