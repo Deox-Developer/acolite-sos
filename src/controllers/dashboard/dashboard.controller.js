@@ -2,6 +2,7 @@ const pool = require('../../config/db-config');
 
 // Inicio de sesión
 
+
 const getUsuarioById = async (req, res) => {
     try {
         const idUsuario = req.params.idUsuario;
@@ -28,5 +29,6 @@ const getUsuarioById = async (req, res) => {
 
 
 module.exports = {
-    getUsuarioById
+    getUsuarioById,
+    
 }

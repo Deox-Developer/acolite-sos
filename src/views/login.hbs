@@ -2,21 +2,19 @@
 
 <body>
 
-
-  <form action="/login" method="post">
-    <input type="email" name="email" placeholder="ingresa email">
-    <input type="password" name="password" placeholder="ingresa tu clave">
-    <input type="submit" value="Iniciar Sesión">
-  </form>
-
+  <div class="container__login">
+    <form action="/login" method="post">
+      <input type="email" name="email" class="input-separador" placeholder="Correo electrónico">
+      <input type="password" name="password" class="input-separador" placeholder="Contraseña">
+      <input type="submit" class="input-btn" value="Iniciar Sesión">
+    </form>
+  </div>
 
   {{#if alert}}
   <h3>{{mensaje}}</h3>
+
   {{/if}}
 
 
 </body>
 {{>footer}}
-
-
-
