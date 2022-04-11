@@ -1,102 +1,130 @@
-/* html, html::after, html::before, body, body::after, body::before, head, head::after, head::before, style, style::after, style::before {
-	content: "";
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	display: block;
-	height: 0;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+.error-container {
+  text-align: center;
+  font-size: 106px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  margin: 70px 15px;
+}
+.error-container > span {
+  display: inline-block;
+  position: relative;
+}
+.error-container > span.four {
+  width: 136px;
+  height: 43px;
+  border-radius: 999px;
+  background:
+    linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
+    linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
+    linear-gradient(to right, #d89ca4, #e27b7e);
+}
+.error-container > span.four:before,
+.error-container > span.four:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 999px;
+}
+.error-container > span.four:before {
+  width: 43px;
+  height: 156px;
+  left: 60px;
+  bottom: -43px;
+  background:
+    linear-gradient(128deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 40%, transparent 41%, transparent 100%),
+    linear-gradient(116deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 50%, transparent 51%, transparent 100%),
+    linear-gradient(to top, #30b64a, #95b89e, #89dda6, #96d7a6, #8bdb69);
+}
+.error-container > span.four:after {
+  width: 137px;
+  height: 43px;
+  transform: rotate(-49.5deg);
+  left: -18px;
+  bottom: 36px;
+  background: linear-gradient(to right, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);
+}
+
+.error-container > span.zero {
+  vertical-align: text-top;
+  width: 156px;
+  height: 156px;
+  border-radius: 999px;
+  background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%,  transparent 51%, transparent 100%),
+    linear-gradient(to top right, #61681f, #868ed4, #2b52ee6a, #CC9AA6, #D7969E, #ED8687, #ED8687);
+  overflow: hidden;
+  animation: bgshadow 5s infinite;
+}
+.error-container > span.zero:before {
+  content: '';
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  left: 0px;
+  bottom: 0px;
+  background:
+    linear-gradient(95deg, transparent 0%, transparent 8%, rgba(0, 0, 0, 0.07) 9%, transparent 50%, transparent 100%),
+    linear-gradient(85deg, transparent 0%, transparent 19%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.07) 91%, transparent 92%, transparent 100%);
+}
+.error-container > span.zero:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 999px;
+  width: 70px;
+  height: 70px;
+  left: 43px;
+  bottom: 43px;
+  background: #FDFAF5;
+  box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+}
+    
+@keyframes bgshadow {
+  0% {
+    box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);
   }
-  
-  body::after, html::before, html::after, head::after, head, style {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
+  45% {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
-  
-  :root {
-	--main-color-hue: 217;
-	--main-color: hsla(var(--main-color-hue), 97%, 61%, 1);
-	--black: #222;
-	--red: #ED6B5F;
+  55% {
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
-  
-  style {
-	overflow: hidden;
-	color: transparent;
-	line-height: 0;
-	width: 5.1rem;
-	height: 2rem;
-	margin-top: 0.2rem;
+  100% {
+    box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
   }
-  style::before {
-	width: 0.3rem;
-	height: 0.3rem;
-	background: var(--black);
-	margin-top: 1.6rem;
-	margin-left: 1.6rem;
-	border-radius: 50%;
-	box-shadow: 0 0 0 0.3rem white, 1.4rem -0.2rem 0 var(--black), 1.5rem 0 0 0.3rem white;
-  }
-  
-  head {
-	width: 5.1rem;
-	height: 5.1rem;
-	background: var(--main-color);
-	border-radius: 50%;
-	margin: auto;
-	z-index: -1;
-	box-shadow: 0 0 0 2rem hsla(var(--main-color-hue), 97%, 61%, 0.1), 0 0 0 4rem hsla(var(--main-color-hue), 97%, 61%, 0.05), 0 0 0 6rem hsla(var(--main-color-hue), 97%, 61%, 0.025);
-  }
-  head::after {
-	background: #222;
-	border-radius: 4rem 4rem 0.5rem 0.5rem;
-	width: 1.1rem;
-	height: 0.5rem;
-	background: var(--red);
-	margin-bottom: 1.2rem;
-	box-shadow: 0 -0.3rem 0 0.3rem var(--black);
-  }
-  
-  html {
-	background: #f9f9f9;
-	font-family: system-ui, Helvetica, Roboto, sans-serif;
-	text-align: center;
-  }
-  html::after {
-	line-height: 0;
-	height: 0;
-	transform: translatex(1rem);
-	content: "4 4";
-	font-size: 7rem;
-	color: #3C86FC;
-	letter-spacing: 2rem;
-	font-weight: bold;
-  }
-  html::before {
-	content: "You seem lost.";
-	font-family: "Merriweather", serif;
-	color: var(--main-color);
-	font-weight: bolder;
-	line-height: 0;
-	height: 0;
-	transform: translatey(11rem);
-	font-size: 2rem;
-  }
-  
-  body {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-  }
-  body::after {
-	content: "The page you are trying to reach doesn't exist.";
-	font-family: "Merriweather Sans", sans-serif;
-	color: var(--black);
-	font-size: 1rem;
-	line-height: 0;
-	height: 0;
-	transform: translatey(14rem);
-  } */
+}
+
+/* demo stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+  background-color: #FDFAF5;
+  margin-bottom: 50px;
+}
+html, button, input, select, textarea {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #bbb;
+}
+h1 {
+  text-align: center;
+  margin: 30px 15px;
+}
+.zoom-area { 
+  max-width: 490px;
+  margin: 30px auto 30px;
+  font-size: 19px;
+  text-align: center;
+}
