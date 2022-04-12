@@ -29,6 +29,11 @@ const router = Router();
 
 const {getUsuarioById} = require('../controllers/dashboard/dashboard.controller');
 
+
+// const {getPageDash} = require('../controllers/dashboard/PageControllers');
+
+
 router.get('/dashboard/:idUsuario', getUsuarioById);
+
 
 module.exports = router;
