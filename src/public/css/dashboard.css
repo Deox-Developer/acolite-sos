@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
@@ -189,11 +189,12 @@ body {
 }
 .user{
   position: relative;
-  min-width: 40px;
+  min-width: 50px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
+  
 }
 .user img{
   position: absolute;
@@ -203,4 +204,49 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.user ion-icon{
+  position: absolute;
+  top: 10px;
+left: 20px;
+  font-size: 1.2em;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
+.dropdown-menu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

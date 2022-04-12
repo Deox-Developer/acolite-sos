@@ -12,23 +12,3 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
-<header>
-    <div class="container">
-        <h2 class="logo">Bienvenido <span class="nombre__sos">{{body.nombre1}} {{body.apellido1}}</span></h2>
-    </div>
-    <nav id="site-nav" class="site-nav">
-        <ul>
-            <li>
-                <li><a href=""><form action="/logOut" method="post" class="form__login">
-                    <input name="salir" type="hidden" value="true">
-                    <input name="contenido" type="hidden" value="{{body.id_usuario}}">
-                    <input type="submit" value="Cerrar sesión"  class="button">
-                </form></a></li>
-
-                
-
-            </li>
-        </ul>
-    </nav>
-
-</header>
