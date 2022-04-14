@@ -455,3 +455,20 @@ font-family: 'Times New Roman', Times, serif;}
 
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
+
+.item1 { grid-area: header; 
+text-align: center;
+}
+#nombre__usuario{
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+#nombre__usuario :hover{
+  border-radius: 6px;
+  background-color: #dfdfdfb2;
+}
