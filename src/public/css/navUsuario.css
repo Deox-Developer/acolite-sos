@@ -32,6 +32,8 @@ header::after {
     font-weight: 800;
 }
 
+
+
 .logo span {
     font-weight: 300;
 }
@@ -44,6 +46,7 @@ header::after {
 
 .button {
     background-color: #1f1e1e;
+    border-radius: 6px;
     border: none;
     color: white;
     padding: 15px 32px;
