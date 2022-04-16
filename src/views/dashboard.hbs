@@ -1,28 +1,24 @@
-{{#if session.estado_conexion}}
+
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
+{{#if datos.estado_conexion}}
 
 <body>
     <div class="grid-container">
         <div class="item1">
-
-            <h2 id="nombre__usuario">Bienvenido
-              
-                <span class="nombre__sos">{{body.nombre1}} {{body.apellido1}}</span>
-             
-             <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> --> 
-            
+            <h2 id="nombre__usuario">Bienvenido          
+                <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido2}}</span>       
+             <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->   
             </h2>
-
-
         </div>
         <div class="item2">
             <h3>menú - dashboard</h3>
             <div class="manu__dashboard">
                 <ul>
-                    <li><a href="perfil/{{session.id_usuario}}">Perfil</a></li>
+                    <li><a href="#">Perfil</a></li>
                     <li><a href="#">Top 10 mecánicos</a></li>
                     <li><a href="#">Top 10 talleres</a></li>
                     <li><a href="#">Configuración</a></li>
+                    <li><a href="/logout/{{datos.id_session}}">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +43,9 @@
         <div class="item5">Footer</div>
     </div>
 </body>
-{{>footerUsuario}}
 {{else}}
-<h2>error</h2>
+<body>
+    <h2>Error: debes iniciar sessión</h2>
+</body>
 {{/if}}
+{{>footerUsuario}}
