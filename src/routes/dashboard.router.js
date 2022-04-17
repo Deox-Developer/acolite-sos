@@ -1,39 +1,12 @@
-// const express = require('express')
-// const {vistaPrincipal, vistaTables, vistaNotifications}= require('../controllers/dashboard/PageControllers')
-// const router = express.Router()
-
-// //const conexion = require ('../database/db')
-
-
-// router.get('/homedashboard',vistaPrincipal)
-// router.get('/tables',vistaTables)
-// // router.get('/tables',(req , res)=>{
-
-// //     conexion.query('SELECT *FROM usuarios', (error, results)=>{
-// //         if (error) {
-// //             throw error
-// //         } else{
-// //             res.render('tables',{results:results})
-// //         }
-// //     })
-// // })
-// router.get('/notifications',vistaNotifications)
-
-
-
-// module.exports=router;
-
-
 const {Router} =require('express');
 const router = Router();
 
-const {getUsuarioById} = require('../controllers/dashboard/dashboard.controller');
+const {sessionUsuario,perfilUsuario,clienteVehiculo,nuevoCliente} = require('../controllers/dashboard/dashboard.controller');
 
-
-// const {getPageDash} = require('../controllers/dashboard/PageControllers');
-
-
-router.get('/dashboard/:idUsuario', getUsuarioById);
+router.get('/dashboard/perfil/:idUsuario/:nombre_usuario', sessionUsuario);
+router.get('/dashboard/perfil-usuario/:idSession/:nombre_usuario',perfilUsuario);
+router.get('/dashboard/cliente-vehiculo/:idSession/:nombre_usuario',clienteVehiculo);
+router.post('/dashboard/cliente-vehiculo/registrar-cliente',nuevoCliente)
 
 
 module.exports = router;

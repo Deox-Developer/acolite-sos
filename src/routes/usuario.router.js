@@ -1,9 +1,9 @@
 const {Router} =require('express');
 const router = Router();
 
-const {getUsuarios,getUsuarioById,crearUsuario, deletUsuario, updateUsuario,borradoLogico,registroUsuario} = require('../controllers/administracion/usuarios.controller');
+const {getUsuarios,getUsuarioById,crearUsuario, deletUsuario, updateUsuario,borradoLogico,registroUsuarioPage} = require('../controllers/administracion/usuarios.controller');
 
-router.get('/registrar-usuario',registroUsuario);
+router.get('/registrar-usuario',registroUsuarioPage);
 router.get('/usuarios', getUsuarios);
 router.get('/usuarios/:idUsuario', getUsuarioById);
 router.post('/registrar-usuario',crearUsuario);

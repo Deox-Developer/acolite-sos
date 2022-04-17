@@ -33,6 +33,11 @@ header::after {
     font-weight: 800;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/Jonathan-Zambrano
 .logo span {
     font-weight: 300;
 }
@@ -45,6 +50,10 @@ header::after {
 
 .button {
     background-color: #1f1e1e;
+<<<<<<< HEAD
+=======
+    border-radius: 6px;
+>>>>>>> origin/Jonathan-Zambrano
     border: none;
     color: white;
     padding: 15px 32px;
@@ -170,4 +179,9 @@ header::after {
     .site-nav a:hover,
     .site-nav a:focus {
         background: transparent;
+<<<<<<< HEAD
     }
+=======
+    }
+
+>>>>>>> origin/Jonathan-Zambrano

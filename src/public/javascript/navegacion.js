@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const navToggle = document.querySelector(".nav-toggle");
 // const navMenu = document.querySelector(".nav-menu");
 
@@ -17,4 +18,12 @@ function cambiarClase(){
   let menuOpen = document.getElementById('menu-toggle');
       menuOpen.classList.toggle('menu-open');    
       
+=======
+function cambiarClase(){
+    let siteNav = document.getElementById('site-nav');
+        siteNav.classList.toggle('site-nav-open');
+    let menuOpen = document.getElementById('menu-toggle');
+        menuOpen.classList.toggle('menu-open');    
+        
+>>>>>>> origin/Jonathan-Zambrano
 }

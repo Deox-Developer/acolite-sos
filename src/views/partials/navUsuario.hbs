@@ -5,31 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{titulo}}</title>
-    <link rel="stylesheet" href="../../css/dashboard.css">
-    <link rel="stylesheet" href="../../css/carddash.css">
-    <link rel="stylesheet" href="../../css/navUsuario.css">
-    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/footerUsuario.css">
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/clienteVehiculo.css">
+    <link rel="stylesheet" href="../../../css/navUsuario.css">
+    <link rel="shortcut icon" href="../../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/footerUsuario.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
-    <div class="container-usuario">
-        <h2 class="logo">Bienvenido <span class="nombre__sos">{{body.nombre1}} {{body.apellido1}}</span></h2>
+    <div class="container">
+        <h2 class="logo">Acolite <span class="nombre__sos">S.O.S</span></h2>
     </div>
     <nav id="site-nav" class="site-nav">
-        <ul>
-            <li>
-                <li><a href=""><form action="/logOut" method="post" class="form__login">
-                    <input name="salir" type="hidden" value="true">
-                    <input name="contenido" type="hidden" value="{{body.id_usuario}}">
-                    <input type="submit" value="Cerrar sesión"  class="button">
-                </form></a></li>
-
-                
-
-            </li>
-        </ul>
+      
     </nav>
 
 </header>
