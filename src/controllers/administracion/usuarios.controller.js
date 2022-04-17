@@ -2,7 +2,7 @@ const pool = require('../../config/db-config');
 
 //Register
 
-const registroUsuario = async (req, res) => {
+const registroUsuarioPage = async (req, res) => {
     try {
         res.render('registrar-usuario');
     } catch (error) {
@@ -115,5 +115,5 @@ module.exports = {
     deletUsuario,
     updateUsuario,
     borradoLogico,
-    registroUsuario
+    registroUsuarioPage
 }

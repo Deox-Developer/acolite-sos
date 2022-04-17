@@ -1,0 +1,77 @@
+{{>navUsuario titulo = 'Acolite - Perfil'}}
+{{#if datos.estado_conexion}}
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h2 id="nombre__usuario">Perfil de usuario 
+                <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
+                <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
+            </h2>
+        </div>
+        <div class="item2">
+            <h3>menú - dashboard</h3>
+            <div class="manu__dashboard">
+                <ul>
+                    <li><a href="/dashboard/perfil/{{datos.id_usuario}}/{{datos.usuario_nombre}}">Dashboard</a></li>
+                    <li><a href="#">Top 10 mecánicos</a></li>
+                    <li><a href="#">Top 10 talleres</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="/logout/{{datos.id_session}}">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="item3">
+            <h3>Datos de usuario</h3>
+            <table>
+                <caption>Información básica</caption>
+                <tr>
+                    <th>Nombres:</th>
+                    <td>{{datos.nombre1}} {{datos.nombre2}}</td>
+                    <th>Apellidos:</th>
+                    <td>{{datos.apellido1}} {{datos.apellido2}}</td>
+                </tr>
+                <tr>
+                    <th>Username:</th>
+                    <td>{{datos.usuario_nombre}}</td>
+                    <th>Correo electrónico:</th>
+                    <td>{{datos.usuario_email}}</td>
+                </tr>
+                <tr>
+                    <th>Fecha de creación:</th>
+                    <td>{{fecha_creacion}}</td>
+                    <th>Última modificación:</th>
+                    <td>{{fecha_modificacion}}</td>
+                </tr>
+                <tr>
+                    <th>Tipo de identificación:</th>
+                    <td>{{datos.nombre}}</td>
+                    <th>Identificacion:</th>
+                    <td>{{datos.identificacion}}</td>
+                </tr>
+                <tr>
+                    <th>Contacto:</th>
+                    <td>{{datos.contacto}}</td>
+                    <th>Estado de cuenta:</th>
+                    {{#if datos.estado_conexion}}
+                    <td>Activo</td>
+                    {{else}}
+                    <td>Inactivo</td>
+                    {{/if}}
+                </tr>
+
+            </table>
+        </div>
+        <div class="item4">
+            <h3>Calificación de usuario</h3>    
+        </div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+{{else}}
+
+<body>
+    <h2>Error: debes iniciar sessión</h2>
+</body>
+{{/if}}
+{{>footerUsuario}}

@@ -6,15 +6,11 @@
     <form action="/login" method="post">
       <input type="email" name="email" class="input-separador" placeholder="Correo electrónico">
       <input type="password" name="password" class="input-separador" placeholder="Contraseña">
+        {{#if alert}}
+          <h3>{{mensaje}}</h3>
+        {{/if}}
       <input type="submit" class="input-btn" value="Iniciar Sesión">
     </form>
   </div>
-
-  {{#if alert}}
-  <h3>{{mensaje}}</h3>
-
-  {{/if}}
-
-
 </body>
 {{>footer}}
