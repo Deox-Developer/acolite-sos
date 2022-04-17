@@ -14,9 +14,11 @@
             <h3>menú - dashboard</h3>
             <div class="manu__dashboard">
                 <ul>
-                    <li><a href="#">Perfil</a></li>
+                    <li><a href="/dashboard/perfil-usuario/{{datos.id_session}}/{{datos.usuario_nombre}}">Perfil</a></li>
                     <li><a href="#">Top 10 mecánicos</a></li>
                     <li><a href="#">Top 10 talleres</a></li>
+                    <li><a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">Panel de cliente</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
                     <li><a href="#">Configuración</a></li>
                     <li><a href="/logout/{{datos.id_session}}">Cerrar Sesión</a></li>
                 </ul>
@@ -28,7 +30,7 @@
             <h3>Mostrar hehiculos!</h3>
             {{else}}
             <h3>No tienes vehículos!</h3>
-            <a href="#">Registra uno aquí</a>
+            <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">Registra uno aquí</a>
             {{/if}}
         </div>
         <div class="item4">
