@@ -1,2 +1,4 @@
 # acolite-sos
-## master
+## Creacion de dashboard 
+## perfiles de usuario
+## pedidos 
