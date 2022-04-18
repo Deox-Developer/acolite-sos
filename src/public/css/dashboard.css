@@ -21,7 +21,7 @@ body {
 .container__dashboard {
   position: fixed;
   width: 100%;
-
+display: block;
 }
 
 .navigation {
@@ -258,7 +258,7 @@ left: 20px;
 
 
 .cuerpo {
-  position: absolute;
+  position: fixed;
 display: block;
  align-content: center;
   padding:15px 0 10px 40px;
@@ -271,7 +271,7 @@ display: block;
 .columna_derecha {
   float:right; /* Alineación a la derecha */
   width:500px;
-  border:solid lightblue 1px;
+  border:solid rgba(200, 217, 223, 0.367) 1px;
   padding:5px;
 
 
@@ -279,12 +279,60 @@ display: block;
 .columna_izquierda {
   float:left; /* Alineación a la izquierda */
   width:500px;
-  border:solid lightblue 1px;
+  border:solid rgba(200, 217, 223, 0.367) 1px;
   padding:5px;
   
 
 
 }
+/* -------------------------------------------------------------------------------------------- */
+.columna_derecha-usuario {
+  float:right; /* Alineación a la derecha */
+  width:310px;
+  border:solid rgba(200, 217, 223, 0.367) 1px;
+  padding:5px;
+
+
+}
+.columna_izquierda-usuario {
+  float:left; /* Alineación a la izquierda */
+  width:520px;
+  border:solid rgba(200, 217, 223, 0.367) 1px;
+  padding:5px;
+
+  
+
+
+}
+/* ***************************************************************************************************** */
+#container-usuario1{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5px auto;
+	height: 300px;
+	width: 300px;
+  
+  
+	
+}
+#container-usuario{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5px auto;
+	height: 300px;
+	width: 500px;
+  
+  
+	
+}
+
+
 /* **************************************************************************************************** */
 /* cards -- pedidos-*/
 
@@ -483,7 +531,7 @@ font-family: 'Times New Roman', Times, serif;}
     'menu footer footer footer footer footer';
   gap: 5px;
   background-color: transparent;
-
+position: fixed;
 }
 
 .grid-container > div {
