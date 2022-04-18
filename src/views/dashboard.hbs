@@ -1,9 +1,30 @@
 
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
 {{#if datos.estado_conexion}}
-<link rel="stylesheet" href="../css/pantalladecarga.css">
+<link rel="stylesheet" href="/css/pantalladecarga.css">
 
 <body>
+
+    <!-- Agregando modal-->
+        <div id="miModal" class="modal">
+          <div class="flex" id="flex">
+            <div class="contenido-modal">
+              <div class="modal-header flex">
+                <h2>¡Error!</h2>
+                <div class="close" id="close"></div>
+              </div>
+              <div class="modal-body">
+                <p>Usted inicio sesión incorrecto</p>			
+              </div>
+            <div class="footer">
+                <h3>Acolite S.O.S &copy;</h3>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
 <!-- dashboard-->
     <div class="grid-container">
         <div class="item1">
@@ -54,4 +75,4 @@
 {{/if}}
 {{>footerUsuario}}
 
-<script src="../javascript/pantallacarga.js"></script>
+<script src="/javascript/pantallacarga.js"></script>

@@ -7,9 +7,7 @@ abrir.addEventListener('click', function(){
     setTimeout(function(){
         modal.style.display = 'none';
     }, 4000);
-    
 });
-
 
 window.addEventListener('click', function(e){
     console.log(e.target);
