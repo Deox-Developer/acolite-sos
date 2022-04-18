@@ -25,10 +25,6 @@ function showSlides(n){
     quadrates[slideIndex-1].className += " active";
 }
 
-
-
-
-
 /*carrusel noticias y cambios*/
 
 function App() {}
