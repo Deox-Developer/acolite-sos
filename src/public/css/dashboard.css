@@ -32,7 +32,9 @@ body {
   border-left: 10px solid var(--blue);
   transition: 0.5s;
   overflow: hidden;
+    z-index:1;
 }
+
 
 .navigation.active{
     width: 75px;
@@ -253,10 +255,14 @@ left: 20px;
 }
 
 /* dashboard home  */
+
+
 .cuerpo {
-  position: fixed;
+  position: absolute;
+display: block;
  align-content: center;
   padding:15px 0 10px 40px;
+ 
   overflow-x:hidden;
   overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
   height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
@@ -268,13 +274,16 @@ left: 20px;
   border:solid lightblue 1px;
   padding:5px;
 
-  
+
 }
 .columna_izquierda {
   float:left; /* Alineación a la izquierda */
   width:500px;
   border:solid lightblue 1px;
   padding:5px;
+  
+
+
 }
 /* **************************************************************************************************** */
 /* cards -- pedidos-*/
@@ -289,6 +298,7 @@ left: 20px;
 	margin: 15px auto;
 	height: 400px;
 	width: 400px;
+  
   
 	
 }
@@ -456,16 +466,8 @@ font-family: 'Times New Roman', Times, serif;}
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
 
-.item1 { grid-area: header; 
-text-align: center;
-}
-body{
-    padding: 0;
-	margin: 0;
-	width: 100%;
-    background: #e4e4e4;
-    font-family: 'Roboto', sans-serif;
-}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
@@ -474,20 +476,20 @@ body{
 .item5 { grid-area: footer; }
 
 .grid-container {
-  display: grid;
+  display: block;
   grid-template-areas:
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
   gap: 5px;
-  background-color: #acacac;
-  padding: 7px;
+  background-color: transparent;
+
 }
 
 .grid-container > div {
   background-color: rgba(253, 253, 253, 0.904);
   text-align: center;
-  padding: 3px 5;
+ 
   font-size: 15px;
 }
 

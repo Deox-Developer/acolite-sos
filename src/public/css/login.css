@@ -32,7 +32,7 @@
   margin: 0 auto;
   width: 640px;
   padding-bottom: 50px;
-  position: absolute;
+
 }
 @media (max-width: 767px) {
   .container__login {
