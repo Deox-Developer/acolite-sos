@@ -1,8 +1,10 @@
 
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
 {{#if datos.estado_conexion}}
+<link rel="stylesheet" href="../css/pantalladecarga.css">
 
 <body>
+<!-- dashboard-->
     <div class="grid-container">
         <div class="item1">
             <h2 id="nombre__usuario">Bienvenido          
@@ -51,3 +53,5 @@
 </body>
 {{/if}}
 {{>footerUsuario}}
+
+<script src="../javascript/pantallacarga.js"></script>

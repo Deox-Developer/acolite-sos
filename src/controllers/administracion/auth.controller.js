@@ -20,6 +20,7 @@ const validarUsuario = async (req, res) => {
     );
 
     if(totalUsuarios.rowCount === 0){
+        
         res.render("login", { titulo: "login", alert: true, mensaje: 'Ups! Los datos no existen' });
     }else{
         const usuario = totalUsuarios.rows[0];
