@@ -12,6 +12,7 @@ a{
 .Carousel{
     width: 100%;
     margin: 0px 0px;
+    margin-bottom: -225px;
 }
 .Carousel h2{
     font-size: 26px;
@@ -190,4 +191,80 @@ a{
     .next{
         padding: 5px;
     }
+}
+
+/* contenedores y divs */
+
+/* contenedor de divs*/
+
+.contenedorh{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.contenedorvacioh{
+    width: 9.5%;
+}
+
+
+/* contenedor contactos*/
+body{
+    overflow-x: hidden;
+}
+
+/*diseño texto*/
+.redesT{
+    text-align: center;
+}
+
+.redesTi{
+    text-align: center;
+    font-size: 40px;
+}
+
+.redes{
+    font-size: 50px;
+    color: beige;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    filter: drop-shadow(24px 6px 14px rgba(61, 61, 61, 0.5));
+}
+
+.textcard{
+    font-size: 15px;
+
+}
+
+.redes:hover{
+    font-size: 60px;
+}
+
+.texttitulo{
+    font-size: 30px;
+}
+
+/*contenedores*/
+.contenedorc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contenedortextoc {
+    width: 50%;
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.5));
+}
+
+.contenedorvacioc{
+    width: 5%;
+}
+
+.contenedormitadc{
+    width: 25%;
 }
