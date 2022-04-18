@@ -50,105 +50,15 @@ img{
  
 h3{
     text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+p{
+    color:rgb(0, 0, 0);
 }
 
 .cajadetexto{
     line-height: 100px;
-}
-
-/*animaciones con js*/
-
-                  /*animación derecha*/
-                
-.animadoDerecha{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.mostrarDerecha{
-    animation: mostrarDerecha 1.5s;
-}
-
-
-@keyframes mostrarDerecha{
-    0% {
-        transform: translateX(50%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-                     /*animación Abajo*/
-                
-.animadoAbajo{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.mostrarAbajo{
-    animation: mostrarAbajo 1.5s;
-}
-
-
-@keyframes mostrarAbajo{
-    0% {
-        transform: translateY(50%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
-                 /* animación izquierda*/
-
-.animadoIzquierda{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.mostrarIzquierda{
-    animation: mostrarIzquierda 1.5s;
-}
-
-
-@keyframes mostrarIzquierda{
-    0% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-              /* animación sin efecto*/
-
-.animadosinanimacion{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.mostrarsinanimacion{
-    animation: mostrarsinanimacion 1.5s;
-}
-
-@keyframes mostrarsinanimacion{
-    0% {
-        opacity: 0%;
-    }
-    25%{
-        opacity: 25%;
-    }
-    50%{
-        opacity:50%;
-    }
-    75%{
-        opacity: 75%;
-    }
-    100% {
-        opacity: 100%;
-    }
 }
 
 
@@ -208,10 +118,12 @@ h3{
 
 h1{
     margin-bottom: -10px;
+    color:rgb(255, 255, 255);
 }
 
 h2{
     font-size: 35px;
+    color:rgb(255, 255, 255);
 }
 
 
