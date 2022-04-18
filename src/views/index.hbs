@@ -8,9 +8,33 @@
     <!-- boton de volver arriba-->
     <i class="ir-arriba"><img src="https://img.icons8.com/ios/10/000000/collapse-arrow--v1.png" /></i>
 
+
+<!-- carrusel general-->
+<div class="cont">
+        <div class="mySlides">
+            <img src="img/Home/carrusel/imagen1.jpg" alt="imagen-1">
+        </div>
+        <div class="mySlides">
+            <img src="img/Home/carrusel/imagen2.jpg" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="img/Home/carrusel/imagen3.jpeg" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="elements">
+            <span class="quadrate" onclick="currentSlide(1)"></span>
+            <span class="quadrate" onclick="currentSlide(2)"></span>
+            <span class="quadrate" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
     <!-- carrusel con tips-->
     <div class="Carousel">
-        <h2>Tips para tu vehículo</h2>
+        <h2>Noticias y cambios</h2>
         <div class="slick-list" id="slick-list">
             <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
                 onclick="app.processingButton(event)">
