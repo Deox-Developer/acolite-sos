@@ -604,6 +604,8 @@ font-family: 'Times New Roman', Times, serif;}
 } */
 .item5{
   padding-top: 300px;
+  position: fixed;
+  padding: auto;
 }
 
 #nombre__usuario{

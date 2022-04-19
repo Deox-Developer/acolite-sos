@@ -133,7 +133,7 @@ display: block;
 /*---------main-------*/
 
 .main {
-  position: absolute;
+  position: relative;
   width: calc(100% - 300px);
   left: 300px;
   min-height: 100vh;
