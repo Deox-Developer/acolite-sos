@@ -269,4 +269,8 @@ body{
     width: 25%;
 }
 
-/*animacion de cambio en carrusel*/
+/*dimensionando textos e img de info*/
+
+#phome{
+    text-align: justify;
+}
