@@ -12,6 +12,7 @@ a{
 .Carousel{
     width: 100%;
     margin: 0px 0px;
+    margin-bottom: -225px;
 }
 .Carousel h2{
     font-size: 26px;
@@ -104,4 +105,220 @@ a{
 }
 .slick-next{
     right: 0px;
+}
+
+/*carrusel*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body{
+    width: 100%;
+    max-width: 1450px;
+    height: 100vh;
+    padding: 40px;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)),url(../img/Home/carrusel/fondo-body.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.cont{
+    width: 100%;
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+    height: 90%;
+}
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border:  solid #fff 2px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+.active, .quadrate:hover{
+    background-color: #fff;
+}
+@media screen and (max-width:900px) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 100%;
+    }
+    .prev,
+    .next{
+        padding: 5px;
+    }
+}
+
+/* contenedores y divs */
+
+/* contenedor de divs*/
+
+.contenedorh{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.contenedorvacioh{
+    width: 10%;
+}
+
+
+/* contenedor contactos*/
+body{
+    overflow-x: hidden;
+}
+
+/*diseño texto*/
+.redesT{
+    text-align: center;
+}
+
+.redesTi{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.redes{
+    font-size: 50px;
+    color: beige;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    filter: drop-shadow(24px 6px 14px rgba(61, 61, 61, 0.5));
+    padding: 18px;
+}
+
+.textcard{
+    font-size: 15px;
+    color: black;
+
+}
+
+.redes:hover{
+    font-size: 60px;
+}
+
+.texttitulo{
+    font-size: 30px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+/*contenedores*/
+.contenedorc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contenedortextoc {
+    width: 50%;
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.5));
+}
+
+.contenedorvacioc{
+    width: 5%;
+}
+
+.contenedormitadc{
+    width: 25%;
+}
+
+/*dimensionando textos e img de info*/
+
+#phome{
+    text-align: justify;
+    color: black;
+}
+
+/*bordes para cajas de texto*/
+
+.bordeDerecho{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #48c1e6, #ffffff00);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+.bordeIzquierdo{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #ffffff00, #48c1e6);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+.bordeAbajo{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom,#48c1e6, #ffffff00,  #ffffff00, #48c1e6);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+#noticiastexto{
+    color: black;
+}
+
+/*modificando body*/
+
+.body{
+    
+    background-image: url("../img/Nosotros/background/bg.jpg");
+    background-size:auto;
+    opacity: 1;
 }

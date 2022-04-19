@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   height: calc(100% - 150px);
-  position: absolute;
+  position: relative;
   place-content: center;
   width: calc(100% - 0px);
 
