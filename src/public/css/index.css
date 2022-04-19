@@ -207,7 +207,7 @@ a{
 
 
 .contenedorvacioh{
-    width: 9.5%;
+    width: 10%;
 }
 
 
@@ -224,6 +224,7 @@ body{
 .redesTi{
     text-align: center;
     font-size: 40px;
+    color: black;
 }
 
 .redes{
@@ -232,10 +233,12 @@ body{
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     filter: drop-shadow(24px 6px 14px rgba(61, 61, 61, 0.5));
+    padding: 18px;
 }
 
 .textcard{
     font-size: 15px;
+    color: black;
 
 }
 
@@ -245,6 +248,8 @@ body{
 
 .texttitulo{
     font-size: 30px;
+    padding-bottom: 50px;
+    color: black;
 }
 
 /*contenedores*/
@@ -273,4 +278,47 @@ body{
 
 #phome{
     text-align: justify;
+    color: black;
+}
+
+/*bordes para cajas de texto*/
+
+.bordeDerecho{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #48c1e6, #ffffff00);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+.bordeIzquierdo{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #ffffff00, #48c1e6);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+.bordeAbajo{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom,#48c1e6, #ffffff00,  #ffffff00, #48c1e6);
+    filter: drop-shadow(24px 6px 14px rgba(0, 0, 0, 0.096));
+    padding: 10px;
+}
+
+#noticiastexto{
+    color: black;
+}
+
+/*modificando body*/
+
+.body{
+    
+    background-image: url("../img/Nosotros/background/bg.jpg");
+    background-size:auto;
+    opacity: 1;
 }
