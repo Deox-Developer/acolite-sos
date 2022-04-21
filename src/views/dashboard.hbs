@@ -89,129 +89,130 @@
                 </div>
             </div>
 
+            <div class="cuerpo-inf">
+                <div class="">
+                    <div class="columna_derecha">
+                        <div id="container">
 
-            <div class="item3">
-                <div class="columna_derecha">
-                    <div id="container">
+                            <div class="product-details">
 
-                        <div class="product-details">
+                                <h1>MIS PEDIDOS</h1>
+                                {{#if vehiculos}}
+                                <span class="hint-star star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
 
-                            <h1>MIS PEDIDOS</h1>
-                            {{#if vehiculos}}
-                            <span class="hint-star star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </span>
+                                <p class="information"> No tienes PEDIDOS</p>
+                                {{else}}
 
-                            <p class="information"> No tienes PEDIDOS</p>
-                            {{else}}
+                                <div class="control">
 
-                            <div class="control">
+                                    <button class="btn">
+                                        <span class="price"></span>
+                                        <span class="shopping-cart">
+                                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                        </span>
+                                        <span class="buy">NUEVO PEDIDO</span>
+                                    </button>
 
-                                <button class="btn">
-                                    <span class="price"></span>
-                                    <span class="shopping-cart">
-                                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                                    </span>
-                                    <span class="buy">NUEVO PEDIDO</span>
-                                </button>
-
+                                </div>
+                                {{/if}}
                             </div>
-                            {{/if}}
-                        </div>
 
-                        <div class="product-image">
+                            <div class="product-image">
 
-                            <img src="/img/bici.jpg" alt="">
+                                <img src="/img/bici.jpg" alt="">
 
 
-                            <div class="info">
-                                <h2> Arreglo</h2>
-                                <ul>
-                                    <li><strong>Motocicletas </strong> </li>
-                                    <li><strong>Bicicletas </strong></li>
-                                    <li><strong>Automoviles </strong></li>
-                                    <li><strong>etc ... </strong></li>
+                                <div class="info">
+                                    <h2> Arreglo</h2>
+                                    <ul>
+                                        <li><strong>Motocicletas </strong> </li>
+                                        <li><strong>Bicicletas </strong></li>
+                                        <li><strong>Automoviles </strong></li>
+                                        <li><strong>etc ... </strong></li>
 
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
+                    {{!-- <h3>Mis vehículos</h3>
+                    {{#if vehiculos}}
+                    <h3>Mostrar hehiculos!</h3>
+                    {{else}}
+                    <h3>No tienes vehículos!</h3>
+                    <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">Registra uno
+                        aquí</a>
+                    {{/if}} --}}
                 </div>
-                {{!-- <h3>Mis vehículos</h3>
-                {{#if vehiculos}}
-                <h3>Mostrar hehiculos!</h3>
-                {{else}}
-                <h3>No tienes vehículos!</h3>
-                <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">Registra uno
-                    aquí</a>
-                {{/if}} --}}
-            </div>
-            <div class="item4 cuerpo">
-                <div class="columna_izquierda">
-                    <div id="container">
+                <div class="">
+                    <div class="columna_izquierda">
+                        <div id="container">
 
-                        <div class="product-details">
+                            <div class="product-details">
 
-                            <h1>MIS VEHICULOS</h1>
-                            <span class="hint-star star">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </span>
+                                <h1>MIS VEHICULOS</h1>
+                                <span class="hint-star star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
 
-                            <p class="information">NO TIENES VEHICULOS REGISTRADOS</p>
+                                <p class="information">NO TIENES VEHICULOS REGISTRADOS</p>
 
 
 
-                            <div class="control">
+                                <div class="control">
 
-                                <button class="btn">
-                                    <span class="price"></span>
-                                    <span class="shopping-cart">
-                                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                                    </span>
-                                    <span class="buy">Registrate aqui</span>
-                                </button>
+                                    <button class="btn">
+                                        <span class="price"></span>
+                                        <span class="shopping-cart">
+                                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                        </span>
+                                        <span class="buy">Registrate aqui</span>
+                                    </button>
+
+                                </div>
 
                             </div>
 
-                        </div>
+                            <div class="product-image">
 
-                        <div class="product-image">
-
-                            <img src="/img/Taller-de-motos.jpeg" alt="">
+                                <img src="/img/Taller-de-motos.jpeg" alt="">
 
 
-                            <div class="info">
-                                <h2> Description</h2>
-                                <ul>
-                                    <li><strong>Motocicletas </strong> </li>
-                                    <li><strong>Bicicletas </strong></li>
-                                    <li><strong>Automoviles </strong></li>
-                                    <li><strong>etc ... </strong></li>
+                                <div class="info">
+                                    <h2> Description</h2>
+                                    <ul>
+                                        <li><strong>Motocicletas </strong> </li>
+                                        <li><strong>Bicicletas </strong></li>
+                                        <li><strong>Automoviles </strong></li>
+                                        <li><strong>etc ... </strong></li>
 
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
+                    {{!-- <h3>Últimos pedidos</h3>
+                    {{#if pedidos}}
+                    <h3>Muesta 5 útimos pedidos!</h3>
+                    {{else}}
+                    <h3>Ups! no tienes pedidos</h3>
+                    <a href="#">Nuevo pedido</a>
+                    {{/if}} --}}
                 </div>
-                {{!-- <h3>Últimos pedidos</h3>
-                {{#if pedidos}}
-                <h3>Muesta 5 útimos pedidos!</h3>
-                {{else}}
-                <h3>Ups! no tienes pedidos</h3>
-                <a href="#">Nuevo pedido</a>
-                {{/if}} --}}
+                <div class="item5">{{>footerUsuario}}</div>
             </div>
-            <div class="item5">{{>footerUsuario}}</div>
         </div>
     </div>
 </body>
@@ -239,6 +240,11 @@
 <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
 <script type="text/javascript" src="/javascript/script.js"></script>
+
+<script src="javascript/home.js"></script>
+<script src="javascript/volverarriba.js"></script>
+<script src="javascript/animaciones.js"></script>
+
 {{else}}
 
 <body>

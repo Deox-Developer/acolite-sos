@@ -6,17 +6,20 @@
   background: #2d2f36;
 }
 ::-moz-selection {
-  background: #2d2f36;
+  background: hsl(227, 9%, 19%);
 }
 
 .page {
-  background: #e2e2e5;
+  /* background: #f0f0f6; */
   display: flex;
   flex-direction: column;
-  height: calc(100% - 150px);
-  position: absolute;
+  height: calc(100% - 100px);
+  position: relative;
   place-content: center;
   width: calc(100% - 0px);
+  background-image: url(/img/login.jpg);
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
 
 }
 @media (max-width: 767px) {
@@ -27,11 +30,14 @@
   }
 }
 .container__login {
+  padding-left: 33%;
   display: flex;
   height: 320px;
   margin: 0 auto;
-  width: 640px;
+  width: 1050px;
   padding-bottom: 50px;
+
+
 
 }
 @media (max-width: 767px) {
@@ -42,11 +48,12 @@
   }
 }
 .left {
-  background: white;
+  background: rgb(211, 228, 235);
   height: calc(100% - 40px);
   top: 20px;
   position: relative;
-  width: 50%;
+  width: 40%;
+  border-radius: 5%;
 }
 @media (max-width: 767px) {
   .left {
@@ -60,13 +67,14 @@
   font-size: 50px;
   font-weight: 900;
   margin: 50px 40px 40px;
+  color:rgb(44, 144, 212)
 }
 .eula {
 
-  color: #999;
+  color: rgb(4, 101, 123);
   font-size: 14px;
   line-height: 1.5;
-  margin: 40px;
+  margin: 15px;
 }
 .img{
 width: 50px;
