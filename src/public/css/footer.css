@@ -1,5 +1,5 @@
 :root {
-    --mycolor: rgb(255,0,140)
+  --mycolor: rgb(255,0,140)
 }
 footer {
     width: 100%;
@@ -15,70 +15,68 @@ footer {
     margin-bottom: -60px;
 }
 .text {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 40px auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px auto;
 }
 
 
 .list-footer {
-    margin: 30px auto;
-    display: flex;
-    list-style-type: none;
+  margin: 30px auto;
+  display: flex;
+  list-style-type: none;
 }
 .list-footer li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
 }
 .list-footer li a:hover{color: var(--mycolor);}
 
 .social-media {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 .social-media i {
-    padding: 20px;
-    font-size: 25px;
-    color: #fff;
+  padding: 20px;
+  font-size: 25px;
+  color: #fff;
 }
 .social-media i:hover{
-    color: #2de2fa;
+  color: #2de2fa;
 }
 
 @media(max-width:810px){
-   
-    .list-footer li a {
-        padding: 15px;
-        font-size: 15px;
-    }
-    .social-media i {
-        padding: 10px;
-    }
+ 
+  .list-footer li a {
+      padding: 15px;
+      font-size: 15px;
+  }
+  .social-media i {
+      padding: 10px;
+  }
 }
 @media(max-width:610px){
-   
-    .list-footer li a {
-        padding: 10px;
-        font-size: 12px;
-    }
-    .social-media i {
-       font-size: 15px;
-    }
+ 
+  .list-footer li a {
+      padding: 10px;
+      font-size: 12px;
+  }
+  .social-media i {
+     font-size: 15px;
+  }
 }
 @media(max-width:470px){
-    .text {
-        font-size: 12px;
-    }
-    .list-footer li a {
-        padding: 5px;
-    }
+  .text {
+      font-size: 12px;
+  }
+  .list-footer li a {
+      padding: 5px;
+  }
 }
 @media(max-width:330px){
-    .text {
-        font-size: 10px;
-    }
+  .text {
+      font-size: 10px;
+  }
 }
-
-

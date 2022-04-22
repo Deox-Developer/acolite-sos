@@ -92,70 +92,67 @@
                 </div>
             </div>
 
-            <div class="cuerpo-inf">
-                <div class="">
-                    <div class="columna_derecha-usuario">
-                        <div id="container-usuario1">
-                            <h3>Calificación de usuario</h3>
-                        </div>
+
+            <div class="item3">
+
+                <div class="columna_derecha">
+                    <div id="container">
+
+
+                        <h3>Datos de usuario</h3>
+                        <table>
+                            <caption>Información básica</caption>
+                            <tr>
+                                <th>Nombres:</th>
+                                <td>{{datos.nombre1}} {{datos.nombre2}}</td>
+                                <th>Apellidos:</th>
+                                <td>{{datos.apellido1}} {{datos.apellido2}}</td>
+                            </tr>
+                            <tr>
+                                <th>Username:</th>
+                                <td>{{datos.usuario_nombre}}</td>
+                                <th>Correo electrónico:</th>
+                                <td>{{datos.usuario_email}}</td>
+                            </tr>
+                            <tr>
+                                <th>Fecha de creación:</th>
+                                <td>{{fecha_creacion}}</td>
+                                <th>Última modificación:</th>
+                                <td>{{fecha_modificacion}}</td>
+                            </tr>
+                            <tr>
+                                <th>Tipo de identificación:</th>
+                                <td>{{datos.nombre}}</td>
+                                <th>Identificacion:</th>
+                                <td>{{datos.identificacion}}</td>
+                            </tr>
+                            <tr>
+                                <th>Contacto:</th>
+                                <td>{{datos.contacto}}</td>
+                                <th>Estado de cuenta:</th>
+                                {{#if datos.estado_conexion}}
+                                <td>Activo</td>
+                                {{else}}
+                                <td>Inactivo</td>
+                                {{/if}}
+                            </tr>
+
+                        </table>
+
                     </div>
+
                 </div>
-                <div class="">
-
-                    <div class="columna_izquierda-usuario">
-                        <div id="container-usuario">
-
-
-                            <h3>Datos de usuario</h3>
-                            <table>
-                                <caption>Información básica</caption>
-                                <tr>
-                                    <th>Nombres:</th>
-                                    <td>{{datos.nombre1}} {{datos.nombre2}}</td>
-                                    <th>Apellidos:</th>
-                                    <td>{{datos.apellido1}} {{datos.apellido2}}</td>
-                                </tr>
-                                <tr>
-                                    <th>Username:</th>
-                                    <td>{{datos.usuario_nombre}}</td>
-                                    <th>Correo electrónico:</th>
-                                    <td>{{datos.usuario_email}}</td>
-                                </tr>
-                                <tr>
-                                    <th>Fecha de creación:</th>
-                                    <td>{{fecha_creacion}}</td>
-                                    <th>Última modificación:</th>
-                                    <td>{{fecha_modificacion}}</td>
-                                </tr>
-                                <tr>
-                                    <th>Tipo de identificación:</th>
-                                    <td>{{datos.nombre}}</td>
-                                    <th>Identificacion:</th>
-                                    <td>{{datos.identificacion}}</td>
-                                </tr>
-                                <tr>
-                                    <th>Contacto:</th>
-                                    <td>{{datos.contacto}}</td>
-                                    <th>Estado de cuenta:</th>
-                                    {{#if datos.estado_conexion}}
-                                    <td>Activo</td>
-                                    {{else}}
-                                    <td>Inactivo</td>
-                                    {{/if}}
-                                </tr>
-
-                            </table>
-
-                        </div>
-
+            </div>
+            <div class="item4 cuerpo">
+                <div class="columna_izquierda">
+                    <div id="container">
+                        <h3>Calificación de usuario</h3>
                     </div>
                 </div>
             </div>
             <div class="item5">{{>footerUsuario}}</div>
         </div>
     </div>
-
-
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
