@@ -1,4 +1,4 @@
-{{>navUsuario titulo = 'Acolite - Clientes'}}
+{{>navUsuario titulo = 'Acolite - Empleados'}}
 {{#if datos.estado_conexion}}
 
 <body>
@@ -98,11 +98,11 @@
                     <div class="columna_izquierda-usuario">
                         <div id="container-usuario">
                             <h3>Datos del cliente</h3>
-                            {{#if registrarCliente}}
-                            <h4>registrar cliente</h4>
+                            {{#if registrarEmpleado}}
+                            <h4>registrar empleado</h4>
                             <form action="/dashboard/cliente-vehiculo/registrar-cliente" method="post">
                                 <input type="hidden" name="id_session" value="{{datos.id_session}}">
-                                <input type="submit" value="Nuevo Cliente">
+                                <input type="submit" value="Nuevo Empleado">
                             </form>
                             {{else}}
                             <table>
@@ -145,7 +145,7 @@
                 <div class="">
                     <div class="columna_derecha-usuario">
                         <div id="container-usuario1">
-                            <h3>Mecánicos activos</h3>
+                            <h3>Pedidos</h3>
                         </div>
                     </div>
                 </div>
