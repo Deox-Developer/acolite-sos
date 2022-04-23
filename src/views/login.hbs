@@ -29,11 +29,12 @@
           <input id="email" type="email" name="email">
           <label for="password">Password</label>
           <input type="password" id="password" name="password">
-          <input type="submit" id="submit" value="Ingresar">
-          <form>
-            {{#if alert}}
+          {{#if alert}}
             <h3>{{mensaje}}</h3>
             {{/if}}
+          <input type="submit" id="submit" value="Ingresar">
+          <form>
+         <!-- <a href="/registrar-usuario">Regístrate</a> -->
       </div>
     </div>
   </div>

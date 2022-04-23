@@ -1,4 +1,4 @@
-{{>navUsuario titulo = 'Acolite - Clientes'}}
+{{>navUsuario titulo = 'Acolite - Panel de Clientes'}}
 {{#if datos.estado_conexion}}
 
 <body>
@@ -42,30 +42,16 @@
                             <span class="title">Top 10 Talleres</span>
                         </a>
                     </li>
+                    
                     <li>
-                        <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
-                            <span class="icon">
-                                <ion-icon name="people-circle-outline"></ion-icon>
-                            </span>
-                            <span class="title">Panel de Clientes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="/dashboard/empleado/{{datos.id_session}}/{{datos.usuario_nombre}}">
                             <span class="icon">
                                 <ion-icon name="storefront-outline"></ion-icon>
                             </span>
-                            <span class="title">Trabaja con Nosotros</span>
+                            <span class="title">Panel de mecánicos</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="settings-outline"></ion-icon>
-                            </span>
-                            <span class="title">Configuración</span>
-                        </a>
-                    </li>
+                   
                     <li>
                         <a href="/logout/{{datos.id_session}}">
                             <span class="icon">

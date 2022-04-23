@@ -37,7 +37,7 @@ app.use(require('./src/routes/dashboard.router'));
   
 //Iniciar Server
 app.listen(app.get('port'), () => {
-    console.log(`Bienvenido a la consola http://localhost:${app.get("port")}`);
+    console.log(`Consola de Acolite S.O.S® -> Ingresa a la app: \nhttp://localhost:${app.get("port")}`);
 });
 
 
