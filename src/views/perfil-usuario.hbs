@@ -5,7 +5,6 @@
     <div class="grid-container container__dashboard">
 
         <div class="item2">
-
             <div class="navigation">
                 <ul>
                     <li>
@@ -24,24 +23,7 @@
                             </span>
                             <span class="title">Dashboard</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                </ion-icon>
-                                <ion-icon name="earth-outline"></ion-icon>
-                            </span>
-                            <span class="title">Top 10 mecanicos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="build-outline"></ion-icon>
-                            </span>
-                            <span class="title">Top 10 Talleres</span>
-                        </a>
-                    </li>
+                    </li>     
                     <li>
                         <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
                             <span class="icon">
@@ -51,21 +33,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/dashboard/empleado/{{datos.id_session}}/{{datos.usuario_nombre}}">
                             <span class="icon">
                                 <ion-icon name="storefront-outline"></ion-icon>
                             </span>
-                            <span class="title">Trabaja con Nosotros</span>
+                            <span class="title">Panel de Mecánicos</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="settings-outline"></ion-icon>
-                            </span>
-                            <span class="title">Configuración</span>
-                        </a>
-                    </li>
+              
                     <li>
                         <a href="/logout/{{datos.id_session}}">
                             <span class="icon">
@@ -151,7 +126,7 @@
                     </div>
                 </div>
             </div>
-  
+
         </div>
     </div>
 

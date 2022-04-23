@@ -55,15 +55,7 @@
                             <span class="icon">
                                 <ion-icon name="storefront-outline"></ion-icon>
                             </span>
-                            <span class="title">Trabaja con Nosotros</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="settings-outline"></ion-icon>
-                            </span>
-                            <span class="title">Configuración</span>
+                            <span class="title">Talleres</span>
                         </a>
                     </li>
                     <li>
@@ -97,10 +89,10 @@
 
                     <div class="columna_izquierda-usuario">
                         <div id="container-usuario">
-                            <h3>Datos del cliente</h3>
+                            <h3>Datos del Empleado</h3>
                             {{#if registrarEmpleado}}
                             <h4>registrar empleado</h4>
-                            <form action="/dashboard/cliente-vehiculo/registrar-cliente" method="post">
+                            <form action="/dashboard/empleado/registrar-empleado/" method="post">
                                 <input type="hidden" name="id_session" value="{{datos.id_session}}">
                                 <input type="submit" value="Nuevo Empleado">
                             </form>
@@ -123,7 +115,7 @@
                                     <th>Contacto:</th>
                                     <td>{{datos.contacto}}</td>
                                     <th>Estado de cliente:</th>
-                                    {{#if datosCliente.estado}}
+                                    {{#if datosEmpleado.estado}}
                                     <td>Activo</td>
                                     {{else}}
                                     <td>Inactivo</td>
