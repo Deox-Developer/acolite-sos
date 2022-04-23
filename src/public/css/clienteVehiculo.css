@@ -358,38 +358,49 @@ left: 20px;
 /* dashboard home  */
 
 
-.cuerpo {
+/* .cuerpo {
   position: absolute;
 display: block;
  align-content: center;
   padding:15px 0 10px 40px;
  
-  overflow-x:hidden;
-  overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
-  height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
-}
+  overflow-x:hidden; */
+  /* overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
+  /* height:100%; Hace que se ajuste a la columna más alta  en ie6 */
+/* } */
 
-.columna_derecha {
-  float:right; /* Alineación a la derecha */
-  width:500px;
+/* .columna_derecha {
+  float:right; Alineación a la derecha */
+  /* width:500px;
   border:solid lightblue 1px;
   padding:5px;
+ 
 
-
-}
-.columna_izquierda {
-  float:left; /* Alineación a la izquierda */
-  width:500px;
+} */
+/* .columna_izquierda {
+  float:left; Alineación a la izquierda */
+  /* width:500px;
   border:solid lightblue 1px;
   padding:5px;
   
 
 
-}
+} */
 /* **************************************************************************************************** */
 /* cards -- pedidos-*/
 
+.item5{
+  padding-top: 300px;
+}
+/* cuerpo dashboard  */
+.cuerpo-inf{
+  padding: 10px 50px 50px 50px;
 
+position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
 #container{
 	box-shadow: 0 15px 30px 1px grey;
 	background: rgba(0, 0, 0, 0.9);
@@ -572,11 +583,9 @@ font-family: 'Times New Roman', Times, serif;}
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
 
-.grid-container {
+
+/* .grid-container {
   display: block;
   grid-template-areas:
     'header header header header header header'
@@ -592,6 +601,11 @@ font-family: 'Times New Roman', Times, serif;}
   text-align: center;
  
   font-size: 15px;
+} */
+.item5{
+  padding-top: 300px;
+  position: fixed;
+  padding: auto;
 }
 
 #nombre__usuario{
