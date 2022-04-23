@@ -1,5 +1,3 @@
-const { redirect } = require("express/lib/response");
-const async = require("hbs/lib/async");
 const pool = require("../../config/db-config");
 
 const inicioSesion = async (req, res) => {

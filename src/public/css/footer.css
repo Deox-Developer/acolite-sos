@@ -2,16 +2,17 @@
   --mycolor: rgb(255,0,140)
 }
 footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  background: rgb(21,22,26);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: #fff;
-  padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: rgb(21,22,26);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: -60px;
 }
 .text {
   font-size: 20px;
