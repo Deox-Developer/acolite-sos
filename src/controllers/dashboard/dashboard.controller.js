@@ -1,4 +1,3 @@
-const async = require("hbs/lib/async");
 const pool = require("../../config/db-config");
 
 // Inicio de sesión
@@ -64,19 +63,15 @@ const clienteVehiculo = async (req, res) => {
       "SELECT * FROM administracion.session as s INNER JOIN administracion.usuarios as u ON s.id_usuario = u.id_usuario  INNER JOIN informacion_general.tipo_identificacion as i ON u.tipo_identificacion = i.id WHERE s.id_session = $1 AND u.usuario_nombre= $2 AND s.estado_conexion = true",
       [idSession, nombre_usuario]
     );
-    console.log(usuario.rowCount);
-
     if (usuario.rowCount === 0) {
       console.log("Error no existe el usuario");
     } else {
       var datosUsuario = usuario.rows[0];
-      console.log(datosUsuario.id_usuario);
+    
       const cliente = await pool.query(
         "SELECT * FROM clientes.clientes WHERE id_usuario = $1 AND estado = true",
         [datosUsuario.id_usuario]
       );
-      console.log(cliente.rowCount);
-
       if (cliente.rowCount === 0) {
         res.render("cliente-vehiculo", {
           titulo: "Registrar Cliente",
@@ -155,18 +150,14 @@ const empleadoCliente = async (req, res) => {
       [idSession, nombre_usuario]
     );
 
-    console.log(usuario.rowCount);
-
     if (usuario.rowCount === 0) {
       console.log("Error no existe el usuario");
     } else {
       var datosUsuario = usuario.rows[0];
-      console.log(datosUsuario.id_usuario);
       const empleado = await pool.query(
         "SELECT * FROM empleados.empleados WHERE id_usuario = $1 AND estado = true",
         [datosUsuario.id_usuario]
       );
-      console.log(empleado.rowCount);
       if (empleado.rowCount === 0) {
         res.render("empleado", {
           titulo: "Empleado",
@@ -233,6 +224,8 @@ const nuevoEmpleado = async (req, res) => {
 
   }
 };
+
+
 module.exports = {
   sessionUsuario,
   perfilUsuario,
