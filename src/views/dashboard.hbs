@@ -7,6 +7,12 @@
             <div class="navigation">
                 <ul>
                     <li class="navigation__tex__menu">
+
+        <div class="item2">
+
+            <div class="navigation">
+                <ul>
+                    <li>
                         <a href="#">
                             <span class="icon">
                                 <ion-icon name="ios-car-outline"></ion-icon>
@@ -14,6 +20,19 @@
                         </a>
                     </li>
                     <li class="navigation__tex__menu">
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/dashboard/perfil-usuario/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                            <span class="icon">
+                                <ion-icon name="car-sport-outline"></ion-icon>
+                            </span>
+                            <span class="title">Perfil</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#">
                             <span class="icon">
                                 </ion-icon>
@@ -23,6 +42,7 @@
                         </a>
                     </li>
                     <li class="navigation__tex__menu">
+                    <li>
                         <a href="#">
                             <span class="icon">
                                 <ion-icon name="build-outline"></ion-icon>
@@ -31,6 +51,7 @@
                         </a>
                     </li>
                     <li class="navigation__tex__menu">
+                    <li>
                         <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
                             <span class="icon">
                                 <ion-icon name="people-circle-outline"></ion-icon>
@@ -48,6 +69,16 @@
                     </li>
                     <li class="navigation__tex__menu">
                         <a href="/dashboard/perfil-usuario/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="storefront-outline"></ion-icon>
+                            </span>
+                            <span class="title">Trabaja con Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <span class="icon">
                                 <ion-icon name="settings-outline"></ion-icon>
                             </span>
@@ -55,12 +86,15 @@
                         </a>
                     </li>
                     <li class="navigation__tex__menu">
+                    <li>
                         <a href="/logout/{{datos.id_session}}">
                             <span class="icon">
                                 <ion-icon name="log-out-outline"></ion-icon>
                             </span>
                             <span class="title">Cerrar Sesión</span>
                         </a>
+
+
                     </li>
                 </ul>
             </div>
@@ -201,6 +235,7 @@
                     {{/if}} --}}
                 </div>
 
+                <div class="item5">{{>footerUsuario}}</div>
             </div>
         </div>
     </div>

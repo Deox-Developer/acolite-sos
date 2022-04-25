@@ -5,6 +5,8 @@ const pool = new Pool({
     user: 'postgres',
     password: 'Zajo1554@',
     database: 'acolitedb',
+    password: '1309',
+    database: 'acoliteDB',
     port:'5432'
 });
 
