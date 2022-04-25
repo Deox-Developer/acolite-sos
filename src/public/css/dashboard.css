@@ -22,7 +22,6 @@ body {
   position: fixed;
   width: 100%;
   display: block;
-display: block;
 }
 
 .navigation {
@@ -42,16 +41,6 @@ display: block;
 
 .navigation ul {
 
-    z-index:1;
-}
-
-
-.navigation.active{
-    width: 75px;
-}
-
-
-.navigation ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,7 +61,6 @@ display: block;
 }
 .navigation ul li:nth-child(1) {
   margin-bottom: 50px;
-  margin-bottom: 40px;
   pointer-events: none;
 }
 
@@ -157,14 +145,6 @@ display: block;
 .main.active {
   width: calc(100% - 300px);
   left: 80px;
-  background:transparent;
-  transition: 0.5s;
-}
-
-.main.active{
-
-    width: calc(100% - 300px);
-    left: 80px;
 }
 
 .topbar {
@@ -194,12 +174,7 @@ display: block;
   position: relative;
   width: 100%;
 }
-.search label input {}
-.search label{
-  position: relative;
-  width: 100%;
-}
-.search label input{
+.search label input {
   width: 100%;
   height: 40px;
   border-radius: 40px;
@@ -209,15 +184,13 @@ display: block;
   font-size: 15px;
   border: 1px solid var(--black2);
 }
-.search label ion-icon {}
-.search label ion-icon{
+.search label ion-icon {
   position: absolute;
   top: 0;
   left: 10px;
   font-size: 1.2em;
 }
-.user { }
-.user{
+.user {
   position: relative;
   min-width: 50px;
   height: 40px;
@@ -226,9 +199,6 @@ display: block;
   cursor: pointer;
 }
 .user img {
-  
-}
-.user img{
   position: absolute;
   top: 0;
   left: 0;
@@ -239,12 +209,7 @@ display: block;
 .user ion-icon {
   position: absolute;
   top: 10px;
-  left: 20px;}
-
-.user ion-icon{
-  position: absolute;
-  top: 10px;
-left: 20px;
+  left: 20px;
   font-size: 1.2em;
 }
 .dropdown {
@@ -253,10 +218,6 @@ left: 20px;
 }
 .dropdown .dropbtn {
   font-size: 16px;
-  
-}
-.dropdown .dropbtn {
-  font-size: 16px;  
   border: none;
   outline: none;
   color: white;
@@ -271,7 +232,6 @@ left: 20px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -296,13 +256,7 @@ left: 20px;
 .cuerpo-inf {
   padding: 10px 50px 50px 50px;
 
-  position: absolute;}
-
-/* cuerpo dashboard  */
-.cuerpo-inf{
-  padding: 10px 50px 50px 50px;
-
-position: absolute;
+  position: absolute;
   width: 50%;
   height: 100%;
   background-color: #ffffff;
@@ -481,213 +435,7 @@ position: absolute;
   transform: translateX(-100%);
   position: absolute;
   background: #333;
-  z-index: 1;}
-
-.cuerpo {
-  position: fixed;
-display: block;
- align-content: center;
-  padding: 15px 0 10px 40px;
- 
-  overflow-x:hidden;
-  overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
-  height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
-}
-
-.columna_derecha {
-  float:right; /* Alineación a la derecha */
-  width:450px;
-  border:solid rgba(200, 217, 223, 0.367) 1px;
-  padding:5px;
-
-
-}
-.columna_izquierda {
-  float:left; /* Alineación a la izquierda */
-  width:450px;
-  border:solid rgba(200, 217, 223, 0.367) 1px;
-  padding:5px;
-  
-
-
-}
-/* -------------------------------------------------------------------------------------------- */
-.columna_derecha-usuario {
-  float:right; /* Alineación a la derecha */
-  width:350px;
-  border:solid rgba(200, 217, 223, 0.367) 1px;
-  padding:5px;
-
-
-}
-.columna_izquierda-usuario {
-  float:left; /* Alineación a la izquierda */
-  width:600px;
-  border:solid rgba(200, 217, 223, 0.367) 1px;
-  padding:5px;
-
-  
-
-
-}
-/* ***************************************************************************************************** */
-#container-usuario1{
-	box-shadow: 0 15px 30px 1px grey;
-	background: rgba(255, 255, 255, 0.524);
-	text-align: center;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 5px auto;
-	height: 300px;
-	width: 300px;
-  
-  
-	
-}
-#container-usuario{
-	box-shadow: 0 15px 30px 1px grey;
-	background: rgba(255, 255, 255, 0.9);
-	text-align: center;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 5px auto;
-	height: 300px;
-	width: 550px;
-  
-  
-	
-}
-
-
-/* **************************************************************************************************** */
-/* cards -- pedidos-*/
-
-
-#container{
-	box-shadow: 0 15px 30px 1px grey;
-	background: rgba(0, 0, 0, 0.9);
-	text-align: center;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 15px auto;
-	height: 400px;
-	width: 400px;
-  
-  position: relative;
-	
-}
-
-
-
-.product-details {
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-	padding: 20px;
-	height: 100%;
-	float: left;
-	width: 50%;
-
-}
-
-#container .product-details h1{
-	font-family: 'Bebas Neue', cursive;
-	display: inline-block;
-	position: relative;
-	font-size: 30px;
-	color: #fcfcfc;
-	margin: 0;
-	
-}
-
-#container .product-details h1:before{
-	position: absolute;
-	content: '';
-	right: 0%; 
-	top: 0%;
-	transform: translate(25px, -15px);
-	font-family: 'Bree Serif', serif;
-	display: inline-block;
-	background: #ffe6e6;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 5px;
-	color: white;
-	margin: 0;
-	animation: chan-sh 6s ease infinite;
-
-}
-
-
-
-	
-
-
-.hint-star {
-	display: inline-block;
-	margin-left: 0.5em;
-	color: gold;
-	width: 50%;
-}
-
-
-#container .product-details > p {
-font-family: 'EB Garamond', serif;
-	text-align: center;
-	font-size: 18px;
-	color: #7d7d7d;
-	
-}
-.control{
-	position: absolute;
-	bottom: 20%;
-	left: 22.8%;
-	
-}
-.btn {
-
-	transform: translateY(0px);
-	transition: 0.3s linear;
-	background:  #809fff;
-	border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	color: #eee;
-	padding: 0;
-	margin: 0;
-	
-}
-
-.btn:hover{transform: translateY(-6px);
-	background: #1a66ff;}
-
-.btn span {
-	font-family: 'Farsan', cursive;
-	transition: transform 0.3s;
-	display: inline-block;
-  padding: 10px 20px;
-	font-size: 1.2em;
-	margin:0;
-	
-}
-.btn .price, .shopping-cart{
-	background: #333;
-	border: 0;
-	margin: 0;
-}
-
-.btn .price {
-	transform: translateX(-10%); padding-right: 15px;
-}
-
-.btn .shopping-cart {
-	transform: translateX(-100%);
-  position: absolute;
-	background: #333;
-	z-index: 1;
+  z-index: 1;
   left: 0;
   top: 0;
 }
@@ -768,59 +516,6 @@ font-family: 'EB Garamond', serif;
 .item2 {
   grid-area: menu;
 }
-.btn .buy {z-index: 3; font-weight: bolder;}
-
-.btn:hover .price {transform: translateX(-110%);}
-
-.btn:hover .shopping-cart {transform: translateX(0%);}
-
-
-
-.product-image {
-	transition: all 0.3s ease-out;
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	float: right;
-	width: 45%;
-	display: inline-block;
-}
-
-#container img {width: 100%;height: 100%;}
-
-.info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
-    transition: all 0.3s ease-out;
-    transform: translateX(-100%);
-    position: absolute;
-    line-height: 1.8;
-    text-align: left;
-    font-size: 105%;
-    cursor: no-drop;
-    color: #FFF;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-.info h2 {text-align: center}
-.product-image:hover .info{transform: translateX(0);}
-
-.info ul li{transition: 0.3s ease;
-font-family: 'Times New Roman', Times, serif;}
-.info ul li:hover{transform: translateX(50px) scale(1.3);}
-
-.product-image:hover img {transition: all 0.3s ease-out;}
-.product-image:hover img {transform: scale(1.2, 1.2);}
-
-
-/* ------------------------------------------------------------------------------------------------------------------- */
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
 
 /* 
 
