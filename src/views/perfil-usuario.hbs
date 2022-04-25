@@ -1,77 +1,164 @@
-{{>navUsuario titulo = 'Acolite - Perfil'}}
+{{>navUsuario titulo = 'Acolite - Panel de Usuario'}}
 {{#if datos.estado_conexion}}
 
 <body>
-    <div class="grid-container">
-        <div class="item1">
-            <h2 id="nombre__usuario">Perfil de usuario 
-                <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
-                <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
-            </h2>
-        </div>
+    <div class="grid-container container__dashboard">
+
         <div class="item2">
-            <h3>menú - dashboard</h3>
-            <div class="manu__dashboard">
+            <div class="navigation">
                 <ul>
-                    <li><a href="/dashboard/perfil/{{datos.id_usuario}}/{{datos.usuario_nombre}}">Dashboard</a></li>
-                    <li><a href="#">Top 10 mecánicos</a></li>
-                    <li><a href="#">Top 10 talleres</a></li>
-                    <li><a href="#">Configuración</a></li>
-                    <li><a href="/logout/{{datos.id_session}}">Cerrar Sesión</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="ios-car-outline"></ion-icon>
+                            </span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/dashboard/perfil/{{datos.id_usuario}}/{{datos.usuario_nombre}}">
+                            <span class="icon">
+                                <ion-icon name="car-sport-outline"></ion-icon>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>     
+                    <li>
+                        <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                            <span class="icon">
+                                <ion-icon name="people-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">Panel de Clientes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/empleado/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                            <span class="icon">
+                                <ion-icon name="storefront-outline"></ion-icon>
+                            </span>
+                            <span class="title">Panel de Mecánicos</span>
+                        </a>
+                    </li>
+              
+                    <li>
+                        <a href="/logout/{{datos.id_session}}">
+                            <span class="icon">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                            </span>
+                            <span class="title">Cerrar Sesión</span>
+                        </a>
+
+
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="item3">
-            <h3>Datos de usuario</h3>
-            <table>
-                <caption>Información básica</caption>
-                <tr>
-                    <th>Nombres:</th>
-                    <td>{{datos.nombre1}} {{datos.nombre2}}</td>
-                    <th>Apellidos:</th>
-                    <td>{{datos.apellido1}} {{datos.apellido2}}</td>
-                </tr>
-                <tr>
-                    <th>Username:</th>
-                    <td>{{datos.usuario_nombre}}</td>
-                    <th>Correo electrónico:</th>
-                    <td>{{datos.usuario_email}}</td>
-                </tr>
-                <tr>
-                    <th>Fecha de creación:</th>
-                    <td>{{fecha_creacion}}</td>
-                    <th>Última modificación:</th>
-                    <td>{{fecha_modificacion}}</td>
-                </tr>
-                <tr>
-                    <th>Tipo de identificación:</th>
-                    <td>{{datos.nombre}}</td>
-                    <th>Identificacion:</th>
-                    <td>{{datos.identificacion}}</td>
-                </tr>
-                <tr>
-                    <th>Contacto:</th>
-                    <td>{{datos.contacto}}</td>
-                    <th>Estado de cuenta:</th>
-                    {{#if datos.estado_conexion}}
-                    <td>Activo</td>
-                    {{else}}
-                    <td>Inactivo</td>
-                    {{/if}}
-                </tr>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="item1">
+                    <h2 id="nombre__usuario">Bienvenido
+                        <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
+                        <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
+                    </h2>
+                </div>
+            </div>
 
-            </table>
+            <div class="cuerpo-inf">
+                <div class="">
+                    <div class="columna_derecha-usuario">
+                        <div id="container-usuario1">
+                            <h3>Calificación de usuario</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+
+                    <div class="columna_izquierda-usuario">
+                        <div id="container-usuario">
+
+
+                            <h3>Datos de usuario</h3>
+                            <table>
+                                <caption>Información básica</caption>
+                                <tr>
+                                    <th>Nombres:</th>
+                                    <td>{{datos.nombre1}} {{datos.nombre2}}</td>
+                                    <th>Apellidos:</th>
+                                    <td>{{datos.apellido1}} {{datos.apellido2}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Username:</th>
+                                    <td>{{datos.usuario_nombre}}</td>
+                                    <th>Correo electrónico:</th>
+                                    <td>{{datos.usuario_email}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Fecha de creación:</th>
+                                    <td>{{fecha_creacion}}</td>
+                                    <th>Última modificación:</th>
+                                    <td>{{fecha_modificacion}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Tipo de identificación:</th>
+                                    <td>{{datos.nombre}}</td>
+                                    <th>Identificacion:</th>
+                                    <td>{{datos.identificacion}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Contacto:</th>
+                                    <td>{{datos.contacto}}</td>
+                                    <th>Estado de cuenta:</th>
+                                    {{#if datos.estado_conexion}}
+                                    <td>Activo</td>
+                                    {{else}}
+                                    <td>Inactivo</td>
+                                    {{/if}}
+                                </tr>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="item4">
-            <h3>Calificación de usuario</h3>    
-        </div>
-        <div class="item5">Footer</div>
     </div>
+
+
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    //menu toggle
+    let toggle = document.querySelector(".toggle");
+    let navigation = document.querySelector(".navigation");
+    let main = document.querySelector(".main");
+    toggle.onclick = function () {
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+    };
+    //agregar hovered en items
+    let list = document.querySelectorAll(".navigation li");
+    function activeLink() {
+        list.forEach((item) => item.classList.remove("hovered"));
+        this.classList.add("hovered");
+    }
+    list.forEach((item) => item.addEventListener("mouseover", activeLink));
+</script>
+
+<script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+<script type="text/javascript" src="/javascript/script.js"></script>
 {{else}}
 
 <body>
     <h2>Error: debes iniciar sessión</h2>
 </body>
 {{/if}}
-{{>footerUsuario}}

@@ -3,7 +3,7 @@
 }
 footer {
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background: rgb(21,22,26);
     display: flex;
@@ -11,7 +11,9 @@ footer {
     flex-direction: column;
     text-align: center;
     color: #fff;
-    padding: 10px;
+    padding: 0px;
+    height: 60px;
+    padding-bottom: 20px;
 }
 .text {
     font-size: 20px;
@@ -35,7 +37,7 @@ footer {
 .list-footer li a:hover{color: var(--mycolor);}
 
 .social-media {
-    margin: 20px auto;
+    margin: 5px auto;
 }
 .social-media i {
     padding: 20px;
@@ -79,5 +81,3 @@ footer {
         font-size: 10px;
     }
 }
-
-

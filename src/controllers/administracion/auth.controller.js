@@ -1,5 +1,3 @@
-const { redirect } = require("express/lib/response");
-const async = require("hbs/lib/async");
 const pool = require("../../config/db-config");
 
 const inicioSesion = async (req, res) => {
@@ -20,7 +18,6 @@ const validarUsuario = async (req, res) => {
     );
 
     if(totalUsuarios.rowCount === 0){
-        
         res.render("login", { titulo: "login", alert: true, mensaje: 'Ups! Los datos no existen' });
     }else{
         const usuario = totalUsuarios.rows[0];
