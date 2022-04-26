@@ -15,10 +15,16 @@
 
                                 <div class='ch-info'>
                                     <div class='ch-info-front ch-img-1'></div>
-
+   <h3>Automovil</h3>
                                     <div class='ch-info-back'>
-                                        <h3>AQUÍ-TÍTULO</h3>
-                                        <p>TEXTO O SUBTÍTULO<a href='AQUÍ-URL-ENLACE'>AQUÍ-TEXTO-ENLACE</a></p>
+                                     <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="camion">
+
+                                            <input type="submit" class="input">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -37,13 +43,15 @@
                                 <div class='ch-info'>
                                     <div class='ch-info-front ch-img-1'></div>
                                     <div class='ch-info-back'>
-                                         <h3>Motos</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="moto">
-    
-        <input type="submit" class="input">
-    </form>
+                                        <h3>Motos</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="moto">
+
+                                            <input type="submit" class="input">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -62,13 +70,15 @@
                                 <div class='ch-info'>
                                     <div class='ch-info-front ch-img-1'></div>
                                     <div class='ch-info-back'>
-                                         <h3>Camiones</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="camion">
+                                        <h3>Camiones</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="camion">
 
-        <input type="submit" class="input">
-    </form>
+                                            <input type="submit" class="input">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -88,12 +98,14 @@
                                     <div class='ch-info-front ch-img-1'></div>
                                     <div class='ch-info-back'>
                                         <h3>Buses</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        {{!-- <input type="hidden" name="tipoVehiculo" value="bus"> --}}
-        <img class="circular--portrait" src="/img/bici.jpg" />
-        <input type="submit" class="input">
-    </form>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="bus">
+                                         
+                                            <input type="submit" class="input">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +114,7 @@
                 </ul>
             </td>
         </tr>
-         <tr>
+        <tr>
             <td>
                 <ul class='ch-grid'>
                     <li>
@@ -112,13 +124,15 @@
                                 <div class='ch-info'>
                                     <div class='ch-info-front ch-img-1'></div>
                                     <div class='ch-info-back'>
-                                    <h3>Trailers</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        {{!-- <input type="hidden" name="tipoVehiculo" value="trailer"> --}}
-        <img class="circular--portrait" src="/img/bici.jpg" />
-        <input type="submit" class="input">
-    </form>
+                                        <h3>Trailers</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="trailer">
+                                  
+                                            <input type="submit" class="input">
+                                        </form>
 
                                     </div>
                                 </div>
@@ -128,7 +142,7 @@
                 </ul>
             </td>
         </tr>
-         <tr>
+        <tr>
             <td>
                 <ul class='ch-grid'>
                     <li>
@@ -139,12 +153,14 @@
                                     <div class='ch-info-front ch-img-1'></div>
                                     <div class='ch-info-back'>
                                         <h3>Buses</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="bus">
-     
-        <input type="submit" class="input">
-    </form>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="bus">
+
+                                            <input type="submit" class="input">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -154,8 +170,3 @@
             </td>
         </tr>
     </table>
-
-
-
-
-
