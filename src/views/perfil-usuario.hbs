@@ -54,7 +54,8 @@
                 </ul>
             </div>
         </div>
-        <div class="main">
+      
+        <div class="main >
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -78,12 +79,12 @@
                 <div class="">
 
                     <div class="columna_izquierda-usuario">
-                        <div id="container-usuario">
+                        <div id="container-usuario" >
 
 
                             <h3>Datos de usuario</h3>
-                            <table>
-                                <caption>Información básica</caption>
+                            <table class="table__usuario">
+                                <caption >Información básica</caption>
                                 <tr>
                                     <th>Nombres:</th>
                                     <td>{{datos.nombre1}} {{datos.nombre2}}</td>
@@ -108,14 +109,15 @@
                                     <th>Identificacion:</th>
                                     <td>{{datos.identificacion}}</td>
                                 </tr>
+                           
                                 <tr>
                                     <th>Contacto:</th>
                                     <td>{{datos.contacto}}</td>
-                                    <th>Estado de cuenta:</th>
+                                    <th style="color: green;">Estado de cuenta:</th>
                                     {{#if datos.estado_conexion}}
-                                    <td>Activo</td>
+                                    <td style="color: green;">Activo</td>
                                     {{else}}
-                                    <td>Inactivo</td>
+                                    <td style="color: green;">Inactivo</td>
                                     {{/if}}
                                 </tr>
 
@@ -126,8 +128,9 @@
                     </div>
                 </div>
             </div>
-
+          
         </div>
+   
     </div>
 
 

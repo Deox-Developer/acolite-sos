@@ -1,7 +1,7 @@
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
 {{#if datos.estado_conexion}}
 
-<body>
+
     <div class="grid-container container__dashboard">
         <div class="item2">
             <div class="navigation">
@@ -78,132 +78,31 @@
                 </div>
             </div>
 
-            <div class="cuerpo-inf">
-                <div class="">
-                    <div class="columna_derecha">
-                        <div id="container">
+            <div class="cuerpo-info">
 
-                            <div class="product-details">
+                <div class="columna_izquierda">
 
-                                <h1>MIS PEDIDOS</h1>
-                                {{#if vehiculos}}
-                                <span class="hint-star star">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </span>
-
-                                <p class="information"> No tienes PEDIDOS</p>
-                                {{else}}
-
-                                <div class="control">
-
-                                    <button class="btn">
-                                        <span class="price"></span>
-                                        <span class="shopping-cart">
-                                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                                        </span>
-                                        <span class="buy">NUEVO PEDIDO</span>
-                                    </button>
-
-                                </div>
-                                {{/if}}
-                            </div>
-
-                            <div class="product-image">
-
-                                <img src="/img/bici.jpg" alt="">
-
-
-                                <div class="info">
-                                    <h2> Arreglo</h2>
-                                    <ul>
-                                        <li><strong>Motocicletas </strong> </li>
-                                        <li><strong>Bicicletas </strong></li>
-                                        <li><strong>Automoviles </strong></li>
-                                        <li><strong>etc ... </strong></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
+                    <div class="card">
+                        <img src="/img/mechanic.jpg" alt="Avatar" style="width:70%" class="img__card">
+                        <div class="container_card">
+                            <button class="button__card button1">Registra aqui</button>
+                            <br>
+                            <button class="button__card button2">Blue</button>
                         </div>
                     </div>
-                    {{!-- <h3>Mis vehículos</h3>
-                    {{#if vehiculos}}
-                    <h3>Mostrar hehiculos!</h3>
-                    {{else}}
-                    <h3>No tienes vehículos!</h3>
-                    <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">Registra uno
-                        aquí</a>
-                    {{/if}} --}}
+
+
                 </div>
-                <div class="">
-                    <div class="columna_izquierda">
-                        <div id="container">
 
-                            <div class="product-details">
-
-                                <h1>MIS VEHICULOS</h1>
-                                <span class="hint-star star">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </span>
-
-                                <p class="information">NO TIENES VEHICULOS REGISTRADOS</p>
-
-
-
-                                <div class="control">
-
-                                    <button class="btn">
-                                        <span class="price"></span>
-                                        <span class="shopping-cart">
-                                            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                                        </span>
-                                        <span class="buy">Registrate aqui</span>
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                            <div class="product-image">
-
-                                <img src="/img/Taller-de-motos.jpeg" alt="">
-
-
-                                <div class="info">
-                                    <h2> Description</h2>
-                                    <ul>
-                                        <li><strong>Motocicletas </strong> </li>
-                                        <li><strong>Bicicletas </strong></li>
-                                        <li><strong>Automoviles </strong></li>
-                                        <li><strong>etc ... </strong></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    {{!-- <h3>Últimos pedidos</h3>
-                    {{#if pedidos}}
-                    <h3>Muesta 5 útimos pedidos!</h3>
-                    {{else}}
-                    <h3>Ups! no tienes pedidos</h3>
-                    <a href="#">Nuevo pedido</a>
-                    {{/if}} --}}
-                </div>
 
             </div>
+
         </div>
+
     </div>
+
+
+
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -236,7 +135,7 @@
 
 {{else}}
 
-<body>
+
     <h2>Error: debes iniciar sessión</h2>
-</body>
+
 {{/if}}
