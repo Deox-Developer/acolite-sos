@@ -1,6 +1,39 @@
 {{>navUsuario titulo = 'Acolite - Dashboard'}}
 {{#if datos.estado_conexion}}
 
+<link rel="stylesheet" href="css/pantalladecarga.css">
+
+<!-- Modal -->
+
+
+
+    <div id="miModal" class="modal">
+		<div class="flex" id="flex">
+			<div class="contenido-modal">
+				<div class="modal-header flex">
+					<h2>¡Exito!</h2>
+				</div>
+				<div class="modal-body">
+					<p>Loggeo exitoso</p>
+				</div>
+				<div class="footer">
+					<h3>Acolite S.O.S &copy;</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+        window.onload = function(){
+            modal.style.display = 'block';
+            i= setTimeout(function(){
+            modal.style.display = 'none';
+            }, 3000);
+        
+        };
+
+
+</script>
 
 <div class=" container__dashboard">
     <div class="item2">
@@ -219,8 +252,10 @@
 
 <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+<script type="text/javascript" src="/javascript/script.js"></script>
 
 
+<script src="../../../javascript/pantallacarga.js"></script>
 
 {{else}}
 
