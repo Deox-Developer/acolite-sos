@@ -1,12 +1,14 @@
 let modal = document.getElementById('miModal');
 let flex = document.getElementById('flex');
 let abrir = document.getElementById('abrir');
+let cerrar = document.getElementById('close');
 
 abrir.addEventListener('click', function(){
     modal.style.display = 'block';
-    setTimeout(function(){
-        modal.style.display = 'none';
-    }, 4000);
+});
+
+cerrar.addEventListener('click', function(){
+    modal.style.display = 'none';
 });
 
 window.addEventListener('click', function(e){

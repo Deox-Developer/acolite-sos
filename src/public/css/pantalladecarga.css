@@ -1,34 +1,3 @@
-/*
-body{
-	background: #f2f2f2;
-	font-family: 'Raleway', sans-serif;
-}
-
-header{
-	width: 100%;
-	height:600px;
-	background: url('Skewed.png');
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-}
-
-*/
-
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
-
-.flex{
-	width: 100%;
-	height:100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
 .modal{
 	display: none;
 	position: fixed;
@@ -53,6 +22,16 @@ header{
 @keyframes modal{
 	from{top:-330px; opacity:0;}
 	to{top:0; opacity:1;}
+}
+.close{
+	color: #f2f2f2;
+	font-size:30px;
+	font-weight: bold;
+}
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .modal-header, .footer{
