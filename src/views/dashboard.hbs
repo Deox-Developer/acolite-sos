@@ -2,104 +2,196 @@
 {{#if datos.estado_conexion}}
 
 
-    <div class="grid-container container__dashboard">
-        <div class="item2">
-            <div class="navigation">
-                <ul>
-                    <li class="navigation__tex__menu">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="ios-car-outline"></ion-icon>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="#">
-                            <span class="icon">
-                                </ion-icon>
-                                <ion-icon name="earth-outline"></ion-icon>
-                            </span>
-                            <span class="title">Top 10 mecanicos</span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="build-outline"></ion-icon>
-                            </span>
-                            <span class="title">Top 10 Talleres</span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
-                            <span class="icon">
-                                <ion-icon name="people-circle-outline"></ion-icon>
-                            </span>
-                            <span class="title">Panel de Clientes</span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="/dashboard/empleado/{{datos.id_session}}/{{datos.usuario_nombre}}">
-                            <span class="icon">
-                                <ion-icon name="storefront-outline"></ion-icon>
-                            </span>
-                            <span class="title">Panel de mecánicos</span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="/dashboard/perfil-usuario/{{datos.id_session}}/{{datos.usuario_nombre}}">
-                            <span class="icon">
-                                <ion-icon name="settings-outline"></ion-icon>
-                            </span>
-                            <span class="title">Configuración</span>
-                        </a>
-                    </li>
-                    <li class="navigation__tex__menu">
-                        <a href="/logout/{{datos.id_session}}">
-                            <span class="icon">
-                                <ion-icon name="log-out-outline"></ion-icon>
-                            </span>
-                            <span class="title">Cerrar Sesión</span>
-                        </a>
-                    </li>
-                </ul>
+<div class=" container__dashboard">
+    <div class="item2">
+        <div class="navigation">
+            <ul>
+                <li class="navigation__tex__menu">
+                    <a href="#">
+                    <center>   <img style="height: 50px;width:50px;" src="/img/Logo.png" alt=""></center> 
+                        <span class="icon">
+                            <ion-icon name="ios-car-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="#">
+                        <span class="icon">
+                            </ion-icon>
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </span>
+                        <span class="title">Top 10 mecanicos</span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="build-outline"></ion-icon>
+                        </span>
+                        <span class="title">Top 10 Talleres</span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                        <span class="icon">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Panel de Clientes</span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="/dashboard/empleado/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                        <span class="icon">
+                            <ion-icon name="storefront-outline"></ion-icon>
+                        </span>
+                        <span class="title">Panel de mecánicos</span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="/dashboard/perfil-usuario/{{datos.id_session}}/{{datos.usuario_nombre}}">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+                <li class="navigation__tex__menu">
+                    <a href="/logout/{{datos.id_session}}">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="item1">
+                <h2 id="nombre__usuario">Bienvenido
+                    <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
+                    <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
+                </h2>
             </div>
         </div>
-        <div class="main">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
+
+        {{!-- <div class="cuerpo-info">
+
+            <div class="columna_izquierda">
+
+                <div class="card">
+                    <img src="/img/mechanic.jpg" alt="Avatar" style="width:70%" class="img__card">
+                    <div class="container_card">
+                        <button class="button__card button1">Registra aqui</button>
+                        <br>
+                        <button class="button__card button2">Blue</button>
+                    </div>
                 </div>
-                <div class="item1">
-                    <h2 id="nombre__usuario">Bienvenido
-                        <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
-                        <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
-                    </h2>
-                </div>
+
+
             </div>
 
-            <div class="cuerpo-info">
 
-                <div class="columna_izquierda">
+        </div> --}}
+        <div class="app">
+            <div class="cardList">
+                <button class="cardList__btn btn btn--left">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
 
-                    <div class="card">
-                        <img src="/img/mechanic.jpg" alt="Avatar" style="width:70%" class="img__card">
-                        <div class="container_card">
-                            <button class="button__card button1">Registra aqui</button>
-                            <br>
-                            <button class="button__card button2">Blue</button>
+                <div class="cards__wrapper">
+                    <div class="card current--card">
+                        <div class="card__image">
+                            <img src="/img/bici.jpg" alt="" />
                         </div>
                     </div>
 
+                    <div class="card next--card">
+                        <div class="card__image">
+                            <img src="/img/Taller-de-motos.jpeg" alt="" />
+                        </div>
+                    </div>
 
+                    <div class="card previous--card">
+                        <div class="card__image">
+                            <img src="/img/fondo.jpg" alt="" />
+                        </div>
+                    </div>
                 </div>
 
-
+                <button class="cardList__btn btn btn--right">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
             </div>
 
+            <div class="infoList">
+                <div class="info__wrapper">
+                    <div class="info current--info">
+                        <h1 class="text name">REPARA TU BICICLETA</h1>
+              <h4 class="text location">QUITO <img style="width: 60px;" src="/img/uio.png" alt=""></h4>  
+                        <p class="text description">Contactate con mecanicos de confianza</p>
+                    </div>
+
+                    <div class="info next--info">
+                        <h1 class="text name">Repare Motorcycle</h1>
+                        <h4 class="text location">QUITO<img style="width: 60px;" src="/img/uio.png" alt=""></h4>
+                        <p class="text description">Servicio para tu moticicleta</p>
+                    </div>
+
+                    <div class="info previous--info">
+                        <h1 class="text name">Reparacion de Vehiculos</h1>
+                        <h4 class="text location">QUITO<img style="width: 60px;" src="/img/uio.png" alt=""></h4>
+                        <p class="text description">Servicio para cualquier tipo de Vehiculo</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    {{!-- <img src="/img/f1.jpg" alt="" /> --}}
+                </div>
+                <div class="app__bg__image next--image">
+                    {{!-- <img src="/img/f2.jpg" alt="" /> --}}
+                </div>
+                <div class="app__bg__image previous--image">
+                    {{!-- <img src="/img/j3.jpg" alt="" /> --}}
+                </div>
+            </div>
         </div>
 
+
+
+
+
+        <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script type="text/javascript" src="/javascript/script.js"></script>
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='328 112 184 256 328 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:40px' />
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='184 112 328 256 184 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:40px' />
+            </symbol>
+        </svg>
     </div>
+
+</div>
 
 
 
@@ -127,7 +219,7 @@
 
 <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-<script type="text/javascript" src="/javascript/script.js"></script>
+
 
 <script src="javascript/home.js"></script>
 <script src="javascript/volverarriba.js"></script>
@@ -136,6 +228,6 @@
 {{else}}
 
 
-    <h2>Error: debes iniciar sessión</h2>
+<h2>Error: debes iniciar sessión</h2>
 
 {{/if}}
