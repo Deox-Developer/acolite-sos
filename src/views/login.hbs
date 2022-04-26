@@ -1,8 +1,6 @@
 {{>header titulo = 'Acolite - Login'}}
-<link rel="stylesheet" href="/css/pantalladecarga.css">
+
 <body>
-
-
   <div class="page">
     <div class="container__login">
       <div class="left">
@@ -29,17 +27,19 @@
           <input id="email" type="email" name="email">
           <label for="password">Password</label>
           <input type="password" id="password" name="password">
-          {{#if alert}}
-            <h3>{{mensaje}}</h3>
+        {{#if alert  }}
+            <h3  onclick="miFuncion()"></h3>
             {{/if}}
-          <input type="submit" id="submit" value="Ingresar">
+          <input type="submit" id="submit abrir" value="Ingresar"> 
           <form>
          <!-- <a href="/registrar-usuario">Regístrate</a> -->
       </div>
     </div>
   </div>
-
+<script>
+function miFuncion() {
+  alert(" Ingrese correctamente sus datos " );
+}
+</script>
 </body>
 {{>footer}}
-
-<script src="/javascript/pantallacarga.js"></script>

@@ -23,7 +23,7 @@
                             </span>
                             <span class="title">Dashboard</span>
                         </a>
-                    </li>     
+                    </li>
                     <li>
                         <a href="/dashboard/cliente-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}">
                             <span class="icon">
@@ -40,7 +40,7 @@
                             <span class="title">Panel de Mecánicos</span>
                         </a>
                     </li>
-              
+
                     <li>
                         <a href="/logout/{{datos.id_session}}">
                             <span class="icon">
@@ -54,18 +54,19 @@
                 </ul>
             </div>
         </div>
-        <div class="main">
-            <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
-                <div class="item1">
-                    <h2 id="nombre__usuario">Bienvenido
-                        <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
-                        <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
-                    </h2>
-                </div>
+
+        <div class="main >
+            <div class=" topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
             </div>
+            <div class="item1">
+                <h2 id="nombre__usuario">Bienvenido
+                    <span class="nombre__sos"> {{datos.nombre1}} {{datos.apellido1}}</span>
+                    <!--   <a href="#" class="marcado__off"><span class="nombre__sos">Completa tu registro!</span></a> -->
+                </h2>
+            </div>
+
 
             <div class="cuerpo-inf">
                 <div class="">
@@ -82,7 +83,7 @@
 
 
                             <h3>Datos de usuario</h3>
-                            <table>
+                            <table class="table__usuario">
                                 <caption>Información básica</caption>
                                 <tr>
                                     <th>Nombres:</th>
@@ -108,14 +109,15 @@
                                     <th>Identificacion:</th>
                                     <td>{{datos.identificacion}}</td>
                                 </tr>
+
                                 <tr>
                                     <th>Contacto:</th>
                                     <td>{{datos.contacto}}</td>
-                                    <th>Estado de cuenta:</th>
+                                    <th style="color: green;">Estado de cuenta:</th>
                                     {{#if datos.estado_conexion}}
-                                    <td>Activo</td>
+                                    <td style="color: green;">Activo</td>
                                     {{else}}
-                                    <td>Inactivo</td>
+                                    <td style="color: green;">Inactivo</td>
                                     {{/if}}
                                 </tr>
 
@@ -126,9 +128,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    
 
 
 </body>
