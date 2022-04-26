@@ -25,25 +25,6 @@ const validarUsuario = async (req, res) => {
             var time = new Date();
             await pool.query('INSERT INTO administracion.session( id_usuario, fecha_ingreso,estado_conexion)VALUES ( $1, $2, true)',
             [usuario.id_usuario,time]);
-            let modal = document.getElementById('miModal');
-            let flex = document.getElementById('flex');
-            let abrir = document.getElementById('abrir');
-            let cerrar = document.getElementById('close');
-
-            abrir.addEventListener('click', function(){
-              modal.style.display = 'block';
-            });
-
-            cerrar.addEventListener('click', function(){
-              modal.style.display = 'none';
-            });
-
-            window.addEventListener('click', function(e){
-              console.log(e.target);
-              if(e.target == flex){
-                modal.style.display = 'none';
-              }
-            });
             res.redirect('/dashboard/perfil/'+usuario.id_usuario+'/'+usuario.usuario_nombre);
         }else{
             res.render("login", { titulo: "login", alert: true, mensaje: 'Ups! Tu usario está inactivo\n activalo aquí' });
