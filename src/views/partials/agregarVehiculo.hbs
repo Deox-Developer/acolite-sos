@@ -1,62 +1,172 @@
 <!-- contenedor de los items  -->
 
-<div class="item__vehiculo">
+<div class="">
 
-    <h3>Autos</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="auto">
-        <input type="submit" class="input">
-    </form>
-</div>
-<div class="item__vehiculo">
+    <table class="table__vehiculos">
 
-    <h3>Motos</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="moto">
-        <input type="submit"class="input">
-    </form>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
 
-</div>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/auto.jpg" />
+                            <div class='ch-info-wrap'>
 
-<div class="item__vehiculo">
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+   <h3>Automovil</h3>
+                                    <div class='ch-info-back'>
+                                     <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="camion">
 
-    <h3>Camiones</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="camion">
-        <input type="submit" class="input">
-    </form>
+                                            <input type="submit" class="input">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/moto.jpg" />
+                            <div class='ch-info-wrap'>
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+                                    <div class='ch-info-back'>
+                                        <h3>Motos</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="moto">
 
-</div>
-<div class="item__vehiculo">
+                                            <input type="submit" class="input">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/camion.jpg" />
+                            <div class='ch-info-wrap'>
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+                                    <div class='ch-info-back'>
+                                        <h3>Camiones</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="camion">
 
-    <h3>Buses</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="bus">
-        <input type="submit" class="input">
-    </form>
+                                            <input type="submit" class="input">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/bus.jpg" />
+                            <div class='ch-info-wrap'>
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+                                    <div class='ch-info-back'>
+                                        <h3>Buses</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="bus">
+                                         
+                                            <input type="submit" class="input">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/trailer.jpg" />
+                            <div class='ch-info-wrap'>
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+                                    <div class='ch-info-back'>
+                                        <h3>Trailers</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="trailer">
+                                  
+                                            <input type="submit" class="input">
+                                        </form>
 
-</div>
-<div class="item__vehiculo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul class='ch-grid'>
+                    <li>
+                        <div class='ch-item ch-img-1'>
+                            <img class="circular--portrait" src="/img/bike.jpg" />
+                            <div class='ch-info-wrap'>
+                                <div class='ch-info'>
+                                    <div class='ch-info-front ch-img-1'></div>
+                                    <div class='ch-info-back'>
+                                        <h3>Buses</h3>
+                                        <form
+                                            action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}"
+                                            method="post">
+                                            <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
+                                            <input type="hidden" name="tipoVehiculo" value="bus">
 
-    <h3>Trailers</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="trailer">
-        <input type="submit" class="input">
-    </form>
-
-</div>
-<div class="item__vehiculo">
-
-    <h3>Bicicletas</h3>
-    <form action="/dashboard/registrar-vehiculo/{{datos.id_session}}/{{datos.usuario_nombre}}" method="post">
-        <input type="hidden" name="session" value="{{datosCliente.id_cliente}}">
-        <input type="hidden" name="tipoVehiculo" value="bicicleta">
-        <input type="submit" class="input">
-    </form>
-
-</div>
+                                            <input type="submit" class="input">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
